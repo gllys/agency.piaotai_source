@@ -19,10 +19,10 @@ public class browers_set {
 	public WebDriver web_driver = null; // driver初始化
 	private FirefoxProfile firefoxprofile = null;   //firefox初始化，firefox特有配置方式，使用profile配置
 	private static DesiredCapabilities caps = null; // 浏览器设置初始化，IE，CHROME
-	private String projectpath = "C:\\Users\\Administrator\\Desktop\\Gllys_Automation\\letian.demo"; // 项目路径配置，加接使用
+	private String projectpath = "D:\\esclipse\\workspace\\Gllys_Automation"; // 项目路径配置，加接使用
 
-	public void Browsers(BrowersType browerstype) {
-		switch (browerstype) // 枚举方法判断循环
+	public browers_set(BrowersType browserstype) {
+		switch (browserstype) // 枚举方法判断循环
 		{
 		case firefox:
 			File firebug = new File(projectpath + "/tools/firebug-2.0.7.xpi");     // firefox特有方法加入特有项文件插件队列

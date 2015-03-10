@@ -45,7 +45,7 @@ public class ParseProperties {
 	}
 
 	public static void main(String[] args) {
-		ParseProperties a = new ParseProperties("C:/Users/Administrator/Desktop/FireflyAutomation/trunk/tools/test.properties");
+		ParseProperties a = new ParseProperties("D:/esclipse/workspace/Gllys_Automation/tools/test.properties");
 
 		System.out.println(a.getValue("password"));
 	}

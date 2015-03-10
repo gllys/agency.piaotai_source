@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import read_properties.ParseProperties;
-import wait.Wait;;
+import wait_source.Wait;;
 
 public class DO {
 

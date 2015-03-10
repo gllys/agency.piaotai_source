@@ -1,4 +1,4 @@
-package wait;
+package wait_source;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import com.google.common.base.Predicate;
 
 public class Wait {
 	private WebDriver driver;//定义driver
-    private int timeout =10; //定义超时时间为10S
+    private int timeout =30; //定义超时时间为10S
 	
 	public Wait(WebDriver driver){
 		this.driver = driver;//必须要使用This,this是指向后跟的driver为前定义的webdriver而不是后赋予的driver
