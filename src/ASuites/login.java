@@ -24,11 +24,13 @@ public class  login  {
 	private FirefoxProfile firefoxprofile = null;
 	private String projectpath = System.getProperty("user.dir");
 	private Wait wait = null;
+	private DO du;
 	
 	@BeforeClass
 	public void beforeClass() {
-		browers_set browser = new browers_set(BrowersType.firefox);
+		browers_set browser = new browers_set(BrowersType.chrome);
 		driver = browser.web_driver;
+		
 	}
 	
 	@Test
@@ -40,8 +42,8 @@ public class  login  {
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("gllysleletian");
 	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("0823letian");
 	    driver.findElement(By.xpath("//button[text()=\"µÇÂ¼\"]")).submit();
-		
-	     
+	    //du.what("SearchBox").getText();
+        
 		//wait.waitFor(5000);
 		try {
 			Thread.sleep(50000);
