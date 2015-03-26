@@ -30,20 +30,27 @@ public class  login  {
 	public void beforeClass() {
 		browers_set browser = new browers_set(BrowersType.chrome);
 		driver = browser.web_driver;
-		
+		du = new DO(driver);
 	}
 	
 	@Test
 	public void login()
 	{
 		driver.get("http://www.piaotai.com");
-		//wait.waitForElementIsEnable("//a[text()=\"Æ±Ì¨-¾°ÂÃÍ¨\"]");
-		driver.findElement(By.xpath("//input[@id='name']")).clear();
-		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("gllysleletian");
-	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("0823letian");
-	    driver.findElement(By.xpath("//button[text()=\"µÇÂ¼\"]")).submit();
-	    //du.what("SearchBox").getText();
-        
+//		wait.waitForElementIsEnable("//a[text()=\"Æ±Ì¨-¾°ÂÃÍ¨\"]");
+//		driver.findElement(By.xpath("//input[@id='name']")).clear();
+//		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("gllysleletian");
+//	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys("0823letian");
+//	    driver.findElement(By.xpath("//button[text()=\"µÇÂ¼\"]")).submit();
+        du.what("SearchBox").getText();
+	    du.what("string").clear();
+	    du.what("string").sendKeys("gllysleletian");
+	    du.what("string").sendKeys("0823letian");
+	    du.what("string").submit();
+	    
+	         
+	    
+	    
 		//wait.waitFor(5000);
 		try {
 			Thread.sleep(50000);
