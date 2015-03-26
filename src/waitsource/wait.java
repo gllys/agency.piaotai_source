@@ -1,4 +1,4 @@
-package wait_source;
+package waitsource;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Predicate;
 
-public class Wait {
+public class wait {
 	private WebDriver driver;//定义driver
     private int timeout =30; //定义超时时间为10S
 	
-	public Wait(WebDriver driver){
+	public wait(WebDriver driver){
 		this.driver = driver;//必须要使用This,this是指向后跟的driver为前定义的webdriver而不是后赋予的driver
         //PageFactory .initElements(driver, this);	-----> 解决页面元素过期的问题	
 	}

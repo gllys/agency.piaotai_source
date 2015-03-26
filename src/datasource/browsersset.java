@@ -1,8 +1,7 @@
-package data_source;
+package datasource;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;
@@ -12,16 +11,16 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import data_source.BrowersType; //枚举初始化
+import datasource.browserstype;
 
-public class browers_set {
+public class browsersset {
 
 	public WebDriver web_driver = null; // driver初始化
 	private FirefoxProfile firefoxprofile = null;   //firefox初始化，firefox特有配置方式，使用profile配置
 	private static DesiredCapabilities caps = null; // 浏览器设置初始化，IE，CHROME
 	private String projectpath = "D:\\esclipse\\workspace\\Gllys_Automation"; // 项目路径配置，加接使用
 
-	public browers_set(BrowersType browserstype) {
+	public browsersset(browserstype browserstype) {
 		switch (browserstype) // 枚举方法判断循环
 		{
 		case firefox:

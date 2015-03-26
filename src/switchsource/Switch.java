@@ -1,8 +1,8 @@
-package switch_source;
+package switchsource;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+
 
 
 public class Switch {
