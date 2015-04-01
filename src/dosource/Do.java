@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import readproperties.parseproperties;
+import readproperties.ParseProperties;
 import waitsource.wait;
 
 public class Do {
 
 	private WebDriver driver;
-	private parseproperties locator = new parseproperties(System.getProperty("user.dir")+"\\tools\\locators.properties"); 
+	private ParseProperties locator = new ParseProperties(System.getProperty("user.dir")+"\\tools\\locators.properties"); 
 	private wait waiter;
 	
 	public Do(WebDriver driver){

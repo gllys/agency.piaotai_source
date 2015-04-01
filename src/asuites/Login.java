@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 
 import com.thoughtworks.selenium.Wait;
 
-import datasource.browserstype;
-import datasource.browsersset;
+import datasource.BrowsersType;
+import datasource.BrowsersSet;
 import dosource.Do;
 import waitsource.*;
 
 
-public class  login  {
+public class  Login  {
 
 	private WebDriver driver;
 	private Do du;
@@ -22,7 +22,7 @@ public class  login  {
 	
 	@BeforeClass
 	public void beforeClass() {
-		browsersset browser = new browsersset(browserstype.chrome);
+		BrowsersSet browser = new BrowsersSet(BrowsersType.chrome);
 		driver = browser.web_driver;
 		du = new Do(driver);
 	}
