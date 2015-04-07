@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pagesbuilt.HomePage;
+import pagesbuilt.InterFRegister;
 import pagesbuilt.SimplyHomePage;
 import pagesbuilt.SimplyRegisterOnAgency;
 import readproperties.ParseProperties;
@@ -38,9 +39,12 @@ public class RegAgency {
 		simplyhomepage.geturl();
 		simplyhomepage.register();
 		
-		simplyregisteronagency.setAccount("gllysleletian");
-		simplyregisteronagency.setPassword("0823letian");
+		simplyregisteronagency.setAccount(InterFRegister.useraccountnumber);
+		simplyregisteronagency.setPassword(InterFRegister.userpasswordnumber);
+		simplyregisteronagency.setmoblie(InterFRegister.mobilenumber);
 		simplyregisteronagency.regsubmit();
 		
 	}
+	
+
 }

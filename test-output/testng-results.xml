@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8722" started-at="2015-04-07T06:10:13Z" finished-at="2015-04-07T06:10:22Z">
+  <suite name="Default suite" duration-ms="11953" started-at="2015-04-07T06:28:50Z" finished-at="2015-04-07T06:29:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8722" started-at="2015-04-07T06:10:13Z" finished-at="2015-04-07T06:10:22Z">
+    <test name="Default test" duration-ms="11953" started-at="2015-04-07T06:28:50Z" finished-at="2015-04-07T06:29:02Z">
       <class name="regists.RegAgency">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:regists.RegAgency@1dd92fe2]" name="inialize" is-config="true" duration-ms="3850" started-at="2015-04-07T14:10:13Z" finished-at="2015-04-07T14:10:17Z">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:regists.RegAgency@1dd92fe2]" name="inialize" is-config="true" duration-ms="3439" started-at="2015-04-07T14:28:50Z" finished-at="2015-04-07T14:28:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialize -->
-        <test-method status="PASS" signature="regagency()[pri:0, instance:regists.RegAgency@1dd92fe2]" name="regagency" duration-ms="4858" started-at="2015-04-07T14:10:17Z" finished-at="2015-04-07T14:10:22Z">
+        <test-method status="PASS" signature="regagency()[pri:0, instance:regists.RegAgency@1dd92fe2]" name="regagency" duration-ms="8499" started-at="2015-04-07T14:28:54Z" finished-at="2015-04-07T14:29:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regagency -->

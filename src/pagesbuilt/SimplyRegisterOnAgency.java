@@ -34,6 +34,11 @@ public class SimplyRegisterOnAgency {
 	 * @serialData 2015-04-07
 	 */
 
+	public SimplyRegisterOnAgency setmoblie(String mobilenumber){
+		du.what(InterFRegister.mobile).sendKeys(mobilenumber);
+		return this;
+	}
+	
 	public void regsubmit() {
 		du.what(InterFRegister.regsubmit).click();
 	}
@@ -45,4 +50,6 @@ public class SimplyRegisterOnAgency {
 	public WebElement getWebElement(String wm,String accountname){
 		return du.what(String.format(wm, accountname));
 	}
+	
+	
 }
