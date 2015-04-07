@@ -7,15 +7,16 @@ package pagesbuilt;
 public interface InterFRegister {
 
 //	REGAGENCY
-	String getinreg = "";
-	String username = "";
-	String useraccount = "";
-	String userpassword = "";
-	String regsubmit = "";
+	
+	
+	String useraccount = "//input [@id ='reg_account']";
+	String userpassword = "//input [@id='reg_password']|//input[@id = 'reg_repassword']";
+	String regsubmit = "//button[@id='btn_reg']";
 
 	
 //  URLAGENCY
-	String local = "";
+	String local = "http://agency.test.demo.org.cn/";
+	String getinreg = "//a [@class = 'new-account']";
 	
 	
 	

@@ -18,14 +18,14 @@ public class BrowsersSet {
 	public WebDriver web_driver = null; // driver初始化
 	private FirefoxProfile firefoxprofile = null;   //firefox初始化，firefox特有配置方式，使用profile配置
 	private static DesiredCapabilities caps = null; // 浏览器设置初始化，IE，CHROME
-	private String projectpath = "D:\\esclipse\\workspace\\Gllys_Automation"; // 项目路径配置，加接使用
+	//private String projectpath = "D:\\esclipse\\workspace\\Gllys_Automation"; // 项目路径配置，加接使用
 
 	public BrowsersSet(BrowsersType BrowsersType) {
 		switch (BrowsersType) // 枚举方法判断循环
 		{
 		case firefox:
-			File firebug = new File(projectpath + "/tools/firebug-2.0.7.xpi");     // firefox特有方法加入特有项文件插件队列
-			File firepath = new File(projectpath+ "/tools/FireXPath-0.9.7.1.xpi"); 
+			File firebug = new File(System.getProperty("user.dir") + "/tools/firebug-2.0.7.xpi");     // firefox特有方法加入特有项文件插件队列
+			File firepath = new File(System.getProperty("user.dir")+ "/tools/FireXPath-0.9.7.1.xpi"); 
 			firefoxprofile = new FirefoxProfile();                                 // 将设置的profile赋予新profile初始化
 			try {
 				firefoxprofile.addExtension(firebug);                              //加入插件，生效
@@ -40,7 +40,7 @@ public class BrowsersSet {
 			web_driver.manage().window().maximize();//调用句柄后最大化窗口方法
 			break;//跳出该条逻辑
 		case ie:
-			System.setProperty("webdriver.ie.driver", projectpath+ "/tools/IEDriverServer64.exe");
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+ "/tools/IEDriverServer64.exe");
 			caps = DesiredCapabilities.internetExplorer();
 			caps.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS,false);
 			caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
@@ -51,7 +51,7 @@ public class BrowsersSet {
 			web_driver.manage().window().maximize();
 			break;
 		case chrome:
-			System.setProperty("webdriver.chrome.driver", projectpath+ "/tools/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/tools/chromedriver.exe");
 			caps = DesiredCapabilities.chrome();
 			caps.setCapability("chrome.switches",Arrays.asList("--start-maximized")); // 最大化browser
 			// capabilities.setCapability("chrome.switches",

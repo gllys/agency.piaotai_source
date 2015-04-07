@@ -3,17 +3,17 @@ package pagesbuilt;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import dosource.Do;
+import dosource.NewDo;
 import pagesbuilt.InterFRegister;
 
 public class SimplyRegisterOnAgency {
 
 	private WebDriver driver;
-	private Do du;
+	private NewDo du;
 
 	public SimplyRegisterOnAgency(WebDriver driver) {
 		this.driver = driver;
-		du = new Do(driver);
+		du = new NewDo(driver);
 	}
 
 	public SimplyRegisterOnAgency setAccount(String accountvalue) {
@@ -22,7 +22,7 @@ public class SimplyRegisterOnAgency {
 	}
 
 	public SimplyRegisterOnAgency setPassword(String passwordvalue) {
-		for (WebElement eachpassword : du.whats(InterFRegister.userpassword)) {
+		for (WebElement eachpassword:du.whats(InterFRegister.userpassword)) {
 
 			eachpassword.sendKeys(passwordvalue);
 		}

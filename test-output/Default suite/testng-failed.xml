@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ASuites.login">
+      <class name="regists.RegAgency">
         <methods>
-          <include name="releaseDriver"/>
-          <include name="login"/>
-          <include name="beforeClass"/>
+          <include name="regagency"/>
+          <include name="inialize"/>
         </methods>
-      </class> <!-- ASuites.login -->
+      </class> <!-- regists.RegAgency -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
