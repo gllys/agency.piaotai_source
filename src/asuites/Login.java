@@ -35,7 +35,6 @@ public class  Login  {
 	    du.what("string").sendKeys("gllysleletian");
 	    du.what("string").sendKeys("0823letian");
 	    du.what("string").submit();
-	    du.waitForElementPresent("string");
 	    du.waitFor(2000);
 	}
 	
