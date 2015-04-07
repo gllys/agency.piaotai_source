@@ -25,6 +25,7 @@ public class NewDo {
 			we = driver.findElement(By.xpath(locatorname));
 	     }catch(NoSuchElementException e){
 		    System.out.println("-----:(-----");
+		   
 	    }
 		return we;
 	}

@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pagesbuilt.HomePage;
+
 import pagesbuilt.InterFRegister;
 import pagesbuilt.SimplyHomePage;
 import pagesbuilt.SimplyRegisterOnAgency;
-import readproperties.ParseProperties;
+
 import datasource.BrowsersSet;
 import datasource.BrowsersType;
 import dosource.Do;
@@ -30,7 +30,7 @@ public class RegAgency {
 	}
 	
 	@Test
-	public void regagency(){
+	public void regAgency(){
 		SimplyHomePage simplyhomepage = new SimplyHomePage(driver);
 		SimplyRegisterOnAgency simplyregisteronagency = new SimplyRegisterOnAgency(driver);
 		
@@ -42,6 +42,7 @@ public class RegAgency {
 		simplyregisteronagency.setAccount(InterFRegister.useraccountnumber);
 		simplyregisteronagency.setPassword(InterFRegister.userpasswordnumber);
 		simplyregisteronagency.setmoblie(InterFRegister.mobilenumber);
+		
 		simplyregisteronagency.regsubmit();
 		
 	}
