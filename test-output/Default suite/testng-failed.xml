@@ -5,8 +5,8 @@
     <classes>
       <class name="loginagency.LoginAgency">
         <methods>
+          <include name="checkBtn"/>
           <include name="loginInialize"/>
-          <include name="checkSix"/>
         </methods>
       </class> <!-- loginagency.LoginAgency -->
     </classes>
