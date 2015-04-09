@@ -4,8 +4,10 @@ package loginagency;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
@@ -41,13 +43,16 @@ public class LoginAgency {
 		wat.waitForElementPresent(InterFRegister.dashpicture);
 		int titlenum = 6;
 		int realtitlenum = Integer.valueOf(du.whats(InterFRegister.dashtitle).size());
-		
+		Assert.assertEquals(titlenum, realtitlenum);
 	}	
+	
 	@Test
 	public void checkSix(){
 
-		List<WebElement> list = du.whats("//div[@class='nav-inner']/a");
-		
+	    WebElement alltitlename = driver.findElement(By.xpath("//div[@class='nav-inner']//a[@href][1]"));
+		System.out.println(alltitlename);
+//		for(WebElement eachtitlename:alltitlename)
+//		   System.out.println(eachtitlename);
 	}
 	
 }

@@ -34,6 +34,11 @@ public class NewDo {
 		return driver.findElements(By.xpath(locatorname));
 	}
 	
+	@Override
+	public String toString() {
+		return "NewDo [driver=" + driver + ", waiter=" + waiter + "]";
+	}
+
 	public void waitForElementPresent(String locatorname){
 		waiter.waitForElementPresent(locatorname);
 	}
