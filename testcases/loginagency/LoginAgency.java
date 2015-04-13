@@ -77,11 +77,11 @@ public class LoginAgency {
 
 	}
 
-//	@Test
-//	public void checkOtaBtn(){
-//		driver.get(InterFRegister.local);
-//		du.what(InterFRegister.weibo).click();
-//		
-//		
-//	}
+	@Test
+	public void checkOtaBtn(){
+		driver.get(InterFRegister.local);
+		du.what(InterFRegister.weibo).click();
+		
+		
+	}
 }
