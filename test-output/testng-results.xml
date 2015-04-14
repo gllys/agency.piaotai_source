@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12036" started-at="2015-04-09T09:26:40Z" finished-at="2015-04-09T09:26:52Z">
+  <suite name="Default suite" duration-ms="14365" started-at="2015-04-13T01:41:33Z" finished-at="2015-04-13T01:41:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12036" started-at="2015-04-09T09:26:40Z" finished-at="2015-04-09T09:26:52Z">
+    <test name="Default test" duration-ms="14365" started-at="2015-04-13T01:41:33Z" finished-at="2015-04-13T01:41:48Z">
       <class name="loginagency.LoginAgency">
-        <test-method status="PASS" signature="loginInialize()[pri:0, instance:loginagency.LoginAgency@1dd92fe2]" name="loginInialize" is-config="true" duration-ms="5769" started-at="2015-04-09T17:26:40Z" finished-at="2015-04-09T17:26:46Z">
+        <test-method status="PASS" signature="loginInialize()[pri:0, instance:loginagency.LoginAgency@564718df]" name="loginInialize" is-config="true" duration-ms="3907" started-at="2015-04-13T09:41:33Z" finished-at="2015-04-13T09:41:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInialize -->
-        <test-method status="PASS" signature="checkBtn()[pri:0, instance:loginagency.LoginAgency@1dd92fe2]" name="checkBtn" duration-ms="5274" started-at="2015-04-09T17:26:46Z" finished-at="2015-04-09T17:26:51Z">
+        <test-method status="PASS" signature="checkOutBtn()[pri:0, instance:loginagency.LoginAgency@564718df]" name="checkOutBtn" duration-ms="10446" started-at="2015-04-13T09:41:37Z" finished-at="2015-04-13T09:41:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkBtn -->
-        <test-method status="PASS" signature="checkSix()[pri:0, instance:loginagency.LoginAgency@1dd92fe2]" name="checkSix" duration-ms="779" started-at="2015-04-09T17:26:51Z" finished-at="2015-04-09T17:26:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkSix -->
-        <test-method status="PASS" signature="checkValue()[pri:0, instance:loginagency.LoginAgency@1dd92fe2]" name="checkValue" duration-ms="194" started-at="2015-04-09T17:26:52Z" finished-at="2015-04-09T17:26:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkValue -->
+        </test-method> <!-- checkOutBtn -->
       </class> <!-- loginagency.LoginAgency -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

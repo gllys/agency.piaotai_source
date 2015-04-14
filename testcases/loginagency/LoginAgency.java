@@ -2,7 +2,8 @@ package loginagency;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -10,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pagesbuilt.InterFRegister;
+import switchsource.Switch;
 import datasource.BrowsersSet;
 import datasource.BrowsersType;
 import dosource.NewDo;
@@ -62,7 +64,7 @@ public class LoginAgency {
 		du.what(InterFRegister.shouye).click();
 		Assert.assertEquals(du.what(InterFRegister.piaotaijieshao)
 				.isDisplayed(), true);
-		
+
 		Assert.assertEquals(du.what(InterFRegister.ruheruzhu).isDisplayed(),
 				true);
 		Assert.assertEquals(du.what(InterFRegister.peitaoshebei).isDisplayed(),
@@ -78,10 +80,22 @@ public class LoginAgency {
 	}
 
 	@Test
-	public void checkOtaBtn(){
+	public void checkOutBtn() {
 		driver.get(InterFRegister.local);
 		du.what(InterFRegister.weibo).click();
 		
+		Switch switchWin = new Switch(driver);
+		Set<String> ahandles = driver.getWindowHandles();
+		String titlename = null;
+		for (String handle : ahandles) {
+			titlename = driver.switchTo().window(handle).getTitle();
+		}
+		wat.waitFor(5000);
+		if(titlename.contains("Î¢²©")){
+			Assert.assertTrue(true);	
+		}
 		
+		;
+		switchWin.toSpecificWindow(InterFRegister.agencywindowsname);
 	}
 }
