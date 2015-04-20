@@ -34,8 +34,18 @@ public class SimplyRegisterOnAgency {
 	 * @serialData 2015-04-07
 	 */
 
-	public SimplyRegisterOnAgency setmoblie(String mobilenumber){
+	public SimplyRegisterOnAgency setMoblie(String mobilenumber){
 		du.what(InterFRegister.regmobile).sendKeys(mobilenumber);
+		return this;
+	}
+	
+	public SimplyRegisterOnAgency setVerify(String vertify){
+		du.what(InterFRegister.regverifycode).sendKeys(vertify);
+		return this;
+	}
+	
+	public SimplyRegisterOnAgency setMobileVerify(String mobilevertify){
+		du.what(InterFRegister.mobilecode).sendKeys(mobilevertify);
 		return this;
 	}
 	

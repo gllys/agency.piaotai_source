@@ -10,12 +10,17 @@ public interface InterFRegister {
 	String local      			= "http://agency.test.demo.org.cn/";
 	String remote 				= "http://www.piaotai.com";
 	// REGAGENCY
-	String reguseraccount 			= "//input [@id ='account']";
-	String reguserpassword 		= "//input [@id='password']|//input[@id = 'repassword']";
-	String regsubmit 			= "//button[@id='btn_reg']";
-	String regmobile 				= "//input[@id='mobile']";
+	String reguseraccount 		= "//input [@id='account']";
+	String reguserpassword 		= "//input [@id='password']|//input[@id='repassword']";
+	String regsubmit 			= "//div//button[@id='btn-reg']";
+	String regmobile 			= "//input[@id='mobile']";
+	String regverifycode 		= "//input[@id='verifycode']";
+	String mobilecode 			= "//input[@id='code']";
+	String regturnback			= "//div/a[@class='btn btn-default btn-block']";
+	String regverify 			= "0823";
+	String regmobileverify 		= "0823";
 	// AHEADAGENCY
-	String getinreg 			= "//a [@class = 'new-account']";
+	String getinreg 			= "//a [@class='new-account']";
 	String dashpicture 			= "//div [@class='item active']";
 	String dashtitle			= "//div[@class='nav-inner']/a";
 	String weibo 				= "//div[@class='new-aside-sina']/a";

@@ -1,54 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8135" started-at="2015-04-17T10:01:25Z" finished-at="2015-04-17T10:01:33Z">
+  <suite name="Default suite" duration-ms="13156" started-at="2015-04-20T06:53:04Z" finished-at="2015-04-20T06:53:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8135" started-at="2015-04-17T10:01:25Z" finished-at="2015-04-17T10:01:33Z">
+    <test name="Default test" duration-ms="13156" started-at="2015-04-20T06:53:04Z" finished-at="2015-04-20T06:53:17Z">
       <class name="registsagency.RegAgency">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:registsagency.RegAgency@4d826d77]" name="inialize" is-config="true" duration-ms="2793" started-at="2015-04-17T18:01:25Z" finished-at="2015-04-17T18:01:27Z">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:registsagency.RegAgency@18a70f16]" name="inialize" is-config="true" duration-ms="2860" started-at="2015-04-20T14:53:04Z" finished-at="2015-04-20T14:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialize -->
-        <test-method status="FAIL" signature="regAgency()[pri:0, instance:registsagency.RegAgency@4d826d77]" name="regAgency" duration-ms="5326" started-at="2015-04-17T18:01:27Z" finished-at="2015-04-17T18:01:33Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[找不到制定的元素(xpath路径错误) expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 找不到制定的元素(xpath路径错误) expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertFalse(Assert.java:63)
-	at registsagency.RegAgency.regAgency(RegAgency.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="regAgency()[pri:0, instance:registsagency.RegAgency@18a70f16]" name="regAgency" duration-ms="10282" started-at="2015-04-20T14:53:07Z" finished-at="2015-04-20T14:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regAgency -->
