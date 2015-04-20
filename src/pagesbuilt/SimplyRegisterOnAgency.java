@@ -17,12 +17,12 @@ public class SimplyRegisterOnAgency {
 	}
 
 	public SimplyRegisterOnAgency setAccount(String accountvalue) {
-		du.what(InterFRegister.useraccount).sendKeys(accountvalue);
+		du.what(InterFRegister.reguseraccount).sendKeys(accountvalue);
 		return this;
 	}
 
 	public SimplyRegisterOnAgency setPassword(String passwordvalue) {
-		for (WebElement eachpassword:du.whats(InterFRegister.userpassword)) {
+		for (WebElement eachpassword:du.whats(InterFRegister.reguserpassword)) {
 
 			eachpassword.sendKeys(passwordvalue);
 		}
@@ -35,7 +35,7 @@ public class SimplyRegisterOnAgency {
 	 */
 
 	public SimplyRegisterOnAgency setmoblie(String mobilenumber){
-		du.what(InterFRegister.mobile).sendKeys(mobilenumber);
+		du.what(InterFRegister.regmobile).sendKeys(mobilenumber);
 		return this;
 	}
 	

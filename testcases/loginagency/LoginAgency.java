@@ -1,12 +1,16 @@
 package loginagency;
 
 import java.util.List;
-
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.internal.FindsByXPath;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -94,8 +98,26 @@ public class LoginAgency {
 		if(titlename.contains("Î¢²©")){
 			Assert.assertTrue(true);	
 		}
-		
-		;
 		switchWin.toSpecificWindow(InterFRegister.agencywindowsname);
 	}
+	
+	@Test
+	public void checkWeiXinBtn(){
+		Actions dargger = new Actions(driver);
+		driver.get(InterFRegister.local);
+		dargger.moveToElement(driver.findElement(By.xpath(InterFRegister.weixin)));
+		wat.waitFor(1000);
+		dargger.clickAndHold(driver.findElement(By.xpath(InterFRegister.weixin))) ;
+		wat.waitFor(3000);
+		Assert.assertEquals(du.what(InterFRegister.weixinerweima).isDisplayed(), true);
+	
+	}
+	
+	@AfterClass
+	public void closeWinHandle(){
+		driver.close();
+		driver.quit();
+		
+	}
+	
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="loginagency.LoginAgency">
+      <class name="registsagency.RegAgency">
         <methods>
-          <include name="checkOutBtn"/>
-          <include name="loginInialize"/>
+          <include name="regAgency"/>
+          <include name="inialize"/>
         </methods>
-      </class> <!-- loginagency.LoginAgency -->
+      </class> <!-- registsagency.RegAgency -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,10 +10,10 @@ public interface InterFRegister {
 	String local      			= "http://agency.test.demo.org.cn/";
 	String remote 				= "http://www.piaotai.com";
 	// REGAGENCY
-	String useraccount 			= "//input [@id ='reg_account']";
-	String userpassword 		= "//input [@id='reg_password']|//input[@id = 'reg_repassword']";
+	String reguseraccount 			= "//input [@id ='account']";
+	String reguserpassword 		= "//input [@id='password']|//input[@id = 'repassword']";
 	String regsubmit 			= "//button[@id='btn_reg']";
-	String mobile 				= "//input[@id='reg_mobile']";
+	String regmobile 				= "//input[@id='mobile']";
 	// AHEADAGENCY
 	String getinreg 			= "//a [@class = 'new-account']";
 	String dashpicture 			= "//div [@class='item active']";
@@ -24,7 +24,9 @@ public interface InterFRegister {
 	String ruheruzhu			= "//div[@class='nav-inner']/a[3]";
 	String peitaoshebei			= "//div[@class='nav-inner']/a[4]";		
 	String hezuozizhi			= "//div[@class='nav-inner']/a[5]";		
-	String lianxiwomen 			= "//div[@class='nav-inner']/a[6]";		
+	String lianxiwomen 			= "//div[@class='nav-inner']/a[6]";	
+	String weixin               = "//div[@class=\"new-aside-wh\"]";
+	String weixinerweima 		= "//span[@class=\"wh-pup\"]";
 	String mobilenumber 		= "13816219316";
 	String useraccountnumber 	= "gllysleletian";
 	String userpasswordnumber 	= "0823letian";
