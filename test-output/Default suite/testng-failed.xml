@@ -5,7 +5,7 @@
     <classes>
       <class name="registsagency.RegAgency">
         <methods>
-          <include name="regAgency"/>
+          <include name="chkRegUserName"/>
           <include name="inialize"/>
         </methods>
       </class> <!-- registsagency.RegAgency -->

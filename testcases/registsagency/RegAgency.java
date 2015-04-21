@@ -1,25 +1,28 @@
 package registsagency;
 
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import pagesbuilt.InterFRegister;
 import pagesbuilt.SimplyHomePage;
 import pagesbuilt.SimplyRegisterOnAgency;
 import waitsource.wait;
 import datasource.BrowsersSet;
 import datasource.BrowsersType;
-import dosource.Do;
+import dosource.NewDo;
 import errormessage.ErrorCode;
 
 public class RegAgency {
 
 	private WebDriver driver;
-	private Do du;
+	private NewDo du;
 	private wait wat;
 
 	// private ParseProperties getflush;
@@ -28,9 +31,10 @@ public class RegAgency {
 	public void inialize() {
 		BrowsersSet browser = new BrowsersSet(BrowsersType.chrome);
 		driver = browser.web_driver;
-		du = new Do(driver);
+		du = new NewDo(driver);
 		wat = new wait(driver);
 		driver.manage().window().maximize();
+		driver.get(InterFRegister.local);
 	}
 
 	@Test
@@ -64,7 +68,7 @@ public class RegAgency {
 		 **/
 
 		try {
-			simplyhomepage.geturl();
+			
 			simplyhomepage.register();
 			// String currentUrl = driver.getCurrentUrl();
 			System.out.println("register good");
@@ -102,6 +106,50 @@ public class RegAgency {
 		}
 		Assert.assertTrue(true);
 
+	}
+
+	@Test
+	public void chkRegUserName(){
+			
+		
+		
+		du.what(InterFRegister.getinreg).click();
+		wat.waitFor(3000);
+	    du.what(InterFRegister.regsubmit).click();
+		try {
+			WebElement useraccountNULLerrorstring = du.what(InterFRegister.formError);
+
+			System.out.println(useraccountNULLerrorstring.getText());
+			Assert.assertEquals(useraccountNULLerrorstring.getText(), "* 请输入用户名");
+		} catch (Exception e) {
+			System.out.println("没有生成空用户名下的提示 "+ ErrorCode.nosource);// TODO: handle exception
+		}
+		//验证默认状态下的submit提示操作
+		du.what(InterFRegister.reguseraccount).clear();
+		du.what(InterFRegister.reguseraccount).sendKeys("12345");
+		wat.waitFor(3000);
+		du.what(InterFRegister.regtitle).click();
+		try {
+		WebElement useraccountNUMerrorstring = du.what(InterFRegister.formError);
+		System.out.println(useraccountNUMerrorstring.getText());
+	    Assert.assertEquals(useraccountNUMerrorstring.getText(), "* 请输入有效的用户名,最少6 个字符");
+	    
+		} catch (Exception e) {
+			System.out.println("没有生成错误用户名长度(少于6位)下的提示 "+ ErrorCode.nosource);// TODO: handle exception
+		}
+		//验证输入少于6微的字符submit
+		du.what(InterFRegister.reguseraccount).clear();
+		du.what(InterFRegister.reguseraccount).sendKeys("!@#$%^^&&*()");
+		wat.waitFor(3000);
+		du.what(InterFRegister.regtitle).click();
+		try {
+		WebElement useraccountFORMerrorstring = du.what(InterFRegister.formError);
+		System.out.println(useraccountFORMerrorstring.getText());
+	    Assert.assertEquals(useraccountFORMerrorstring.getText(), "* 请输入有效的用户名，只能包含中文汉字、英文字母或数字");
+	    
+		} catch (Exception e) {
+			System.out.println("没有生成错误用户名符号下的提示 "+ ErrorCode.nosource);// TODO: handle exception
+		}
 	}
 
 }

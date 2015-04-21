@@ -10,6 +10,7 @@ public interface InterFRegister {
 	String local      			= "http://agency.test.demo.org.cn/";
 	String remote 				= "http://www.piaotai.com";
 	// REGAGENCY
+	String regtitle 			= "//div/h4";
 	String reguseraccount 		= "//input [@id='account']";
 	String reguserpassword 		= "//input [@id='password']|//input[@id='repassword']";
 	String regsubmit 			= "//div//button[@id='btn-reg']";
@@ -37,4 +38,6 @@ public interface InterFRegister {
 	String userpasswordnumber 	= "0823letian";
 	//handle
 	String agencywindowsname   	= "智慧旅游票务平台";
+	//ERROR
+	String formError 			= "//div/div[@class='formErrorContent']";
 }
