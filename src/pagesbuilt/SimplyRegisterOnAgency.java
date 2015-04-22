@@ -45,7 +45,7 @@ public class SimplyRegisterOnAgency {
 	}
 	
 	public SimplyRegisterOnAgency setMobileVerify(String mobilevertify){
-		du.what(InterFRegister.mobilecode).sendKeys(mobilevertify);
+		du.what(InterFRegister.regmobilecode).sendKeys(mobilevertify);
 		return this;
 	}
 	

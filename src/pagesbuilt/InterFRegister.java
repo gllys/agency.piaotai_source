@@ -16,7 +16,7 @@ public interface InterFRegister {
 	String regsubmit 			= "//div//button[@id='btn-reg']";
 	String regmobile 			= "//input[@id='mobile']";
 	String regverifycode 		= "//input[@id='verifycode']";
-	String mobilecode 			= "//input[@id='code']";
+	String regmobilecode 		= "//input[@id='code']";
 	String regturnback			= "//div/a[@class='btn btn-default btn-block']";
 	String regverify 			= "0823";
 	String regmobileverify 		= "0823";
