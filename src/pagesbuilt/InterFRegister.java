@@ -32,12 +32,25 @@ public interface InterFRegister {
 	String hezuozizhi			= "//div[@class='nav-inner']/a[5]";		
 	String lianxiwomen 			= "//div[@class='nav-inner']/a[6]";	
 	String weixin               = "//div[@class=\"new-aside-wh\"]";
-	String weixinerweima 		= "//span[@class=\"wh-pup\"]";
+	String weixinerweima 		= "//div/span[@class='wh-pup']";
 	String mobilenumber 		= "13816219316";
 	String useraccountnumber 	= "gllysleletian";
 	String userpasswordnumber 	= "0823letian";
+	String useraccount 			= "//div/input[@id='name']";
+	String userpassword			= "//div/input[@id='password']";
+	String dashswitchpic		= "//div[@id='carousel-example-generic']/ol/li/@class";
+	String resetpwd				= "//div/a[@href='/site/reset/']";
+	//resetpwd
+	String reuseraccount 		= "//input[@id='reset_account']";
+	String reuserveritycode		= "//input[@id='reset_code']";
+	String regetcodebtn			= "//button[@id='sendCode']";
+	String reuserpwd			= "//input[@id='reset_password']";
+	String reuserchkpwd			= "//input[@id='reset_password_again']";
+	String resubmitbtn			= "//button[@id='reset_pwd']";
+	String returnbackbtn		= "//div/a[@class='btn btn-default btn-block']";
 	//handle
 	String agencywindowsname   	= "智慧旅游票务平台";
 	//ERROR
-	String formError 			= "//div/div[@class='formErrorContent']";
+	String regformError 		= "//div/div[@class='formErrorContent']";
+	String reformError			= "//span[@id='chk_account']";
 }

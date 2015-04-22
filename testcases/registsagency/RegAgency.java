@@ -55,7 +55,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regsubmit).click();
 		try {
-			WebElement useraccountNULLerrorstring = du.what(InterFRegister.formError);
+			WebElement useraccountNULLerrorstring = du.what(InterFRegister.regformError);
 
 			System.out.println(useraccountNULLerrorstring.getText());
 			Assert.assertEquals(useraccountNULLerrorstring.getText(),
@@ -71,7 +71,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement useraccountNUMerrorstring = du.what(InterFRegister.formError);
+			WebElement useraccountNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountNUMerrorstring.getText());
 			Assert.assertEquals(useraccountNUMerrorstring.getText(),
 					"* 请输入有效的用户名,最少6 个字符");
@@ -87,7 +87,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement useraccountFORMerrorstring = du.what(InterFRegister.formError);
+			WebElement useraccountFORMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountFORMerrorstring.getText());
 			Assert.assertEquals(useraccountFORMerrorstring.getText(),
 					"* 请输入有效的用户名，只能包含中文汉字、英文字母或数字");
@@ -103,7 +103,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regsubmit).click();
 		try {
-			WebElement useraccountEXTerrorstring = du.what(InterFRegister.formError);
+			WebElement useraccountEXTerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountEXTerrorstring.getText());
 			Assert.assertEquals(useraccountEXTerrorstring.getText(), "用户名已存在");
 
@@ -144,7 +144,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement usermobileNULLerrorstring = du.what(InterFRegister.formError);
+			WebElement usermobileNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileNULLerrorstring.getText());
 			Assert.assertEquals(usermobileNULLerrorstring.getText(), "* 请输入手机号");
 		} catch (Exception e) {
@@ -155,7 +155,7 @@ public class RegAgency {
         wat.waitFor(3000);
         du.what(InterFRegister.regtitle).click();
         try {
-        	WebElement usermobileTENNUMerrorstring = du.what(InterFRegister.formError);
+        	WebElement usermobileTENNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileTENNUMerrorstring.getText());
 			Assert.assertEquals(usermobileTENNUMerrorstring.getText(), "* 请输入有效的手机号码");
 		} catch (Exception e) {
@@ -166,7 +166,7 @@ public class RegAgency {
         wat.waitFor(3000);
         du.what(InterFRegister.regtitle).click();
         try {
-        	WebElement usermobileSTRerrorstring = du.what(InterFRegister.formError);
+        	WebElement usermobileSTRerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileSTRerrorstring.getText());
 			Assert.assertEquals(usermobileSTRerrorstring.getText(), "* 请输入有效的手机号码");
 		} catch (Exception e) {
@@ -194,7 +194,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userpasswordNULLerrorstring = du.what(InterFRegister.formError);
+			WebElement userpasswordNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordNULLerrorstring.getText());
 			Assert.assertEquals(userpasswordNULLerrorstring.getText(), "* 请输入密码");
 		} catch (Exception e) {
@@ -204,7 +204,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.formError);
+			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordLOWNUMerrorstring.getText());
 			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* 请输入有效的密码,最少6 个字符");
 		} catch (Exception e) {
@@ -214,7 +214,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.formError);
+			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordLOWNUMerrorstring.getText());
 			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* 请输入数字或英文字母");
 		} catch (Exception e) {
@@ -226,7 +226,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userpasswordRECHKerrorstring = du.what(InterFRegister.formError);
+			WebElement userpasswordRECHKerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordRECHKerrorstring.getText());
 			Assert.assertEquals(userpasswordRECHKerrorstring.getText(), "* 两次输入的密码不一致");
 		} catch (Exception e) {
@@ -243,7 +243,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userverifyCHKNULLerrorstring = du.what(InterFRegister.formError);
+			WebElement userverifyCHKNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userverifyCHKNULLerrorstring.getText());
 			Assert.assertEquals(userverifyCHKNULLerrorstring.getText(), "* 请输入验证码");
 		} catch (Exception e) {
@@ -254,7 +254,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement userverifyCHKerrorstring = du.what(InterFRegister.formError);
+			WebElement userverifyCHKerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userverifyCHKerrorstring.getText());
 			Assert.assertEquals(userverifyCHKerrorstring.getText(), "验证码输入不正确");
 		} catch (Exception e) {
@@ -269,7 +269,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.formError);
+			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileverifyCHKNUllerrorstring.getText());
 			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "* 请输入短信验证码");
 		} catch (Exception e) {
@@ -280,7 +280,7 @@ public class RegAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regtitle).click();
 		try {
-			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.formError);
+			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileverifyCHKNUllerrorstring.getText());
 			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "验证码输入错误");
 		} catch (Exception e) {

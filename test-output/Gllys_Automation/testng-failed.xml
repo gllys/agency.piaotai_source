@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gllys_Automation]">
+  <test name="gllys_reg(failed)">
+    <classes>
+      <class name="registsagency.RegAgency">
+        <methods>
+          <include name="chkRegMobileverify"/>
+          <include name="inialize"/>
+          <include name="quIt"/>
+        </methods>
+      </class> <!-- registsagency.RegAgency -->
+    </classes>
+  </test> <!-- gllys_reg(failed) -->
+</suite> <!-- Failed suite [Gllys_Automation] -->

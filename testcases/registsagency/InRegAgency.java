@@ -5,6 +5,7 @@ import java.util.Random;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -96,4 +97,11 @@ public class InRegAgency {
 		Assert.assertTrue(true);
 
 	}
+	@AfterClass 
+	public void quIt(){
+		driver.close();
+		driver.quit();
+		
+	}
+	
 }

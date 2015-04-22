@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="6" passed="5">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Gllys_Automation" duration-ms="62354" started-at="2015-04-22T03:27:29Z" finished-at="2015-04-22T03:28:31Z">
+  <suite name="Default suite" duration-ms="10788" started-at="2015-04-22T07:23:49Z" finished-at="2015-04-22T07:23:59Z">
     <groups>
     </groups>
-    <test name="gllys_reg" duration-ms="62354" started-at="2015-04-22T03:27:29Z" finished-at="2015-04-22T03:28:31Z">
-      <class name="registsagency.RegAgency">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="inialize" is-config="true" duration-ms="7082" started-at="2015-04-22T11:27:29Z" finished-at="2015-04-22T11:27:36Z">
+    <test name="Default test" duration-ms="10788" started-at="2015-04-22T07:23:49Z" finished-at="2015-04-22T07:23:59Z">
+      <class name="loginagency.IsLoginAgency">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:loginagency.IsLoginAgency@770c2e6b]" name="inialize" is-config="true" duration-ms="6987" started-at="2015-04-22T15:23:49Z" finished-at="2015-04-22T15:23:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialize -->
-        <test-method status="PASS" signature="chkRegTile()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegTile" duration-ms="1112" started-at="2015-04-22T11:27:36Z" finished-at="2015-04-22T11:27:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkRegTile -->
-        <test-method status="PASS" signature="chkRegUserName()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegUserName" duration-ms="12986" started-at="2015-04-22T11:27:37Z" finished-at="2015-04-22T11:27:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkRegUserName -->
-        <test-method status="PASS" signature="chkRegMobile()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegMobile" duration-ms="12682" started-at="2015-04-22T11:27:50Z" finished-at="2015-04-22T11:28:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkRegMobile -->
-        <test-method status="PASS" signature="chkRegpwd()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegpwd" duration-ms="16021" started-at="2015-04-22T11:28:03Z" finished-at="2015-04-22T11:28:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkRegpwd -->
-        <test-method status="PASS" signature="chkRegverify()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegverify" duration-ms="6562" started-at="2015-04-22T11:28:19Z" finished-at="2015-04-22T11:28:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkRegverify -->
-        <test-method status="FAIL" signature="chkRegMobileverify()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="chkRegMobileverify" duration-ms="3210" started-at="2015-04-22T11:28:25Z" finished-at="2015-04-22T11:28:29Z">
+        <test-method status="FAIL" signature="chkResetPwd()[pri:0, instance:loginagency.IsLoginAgency@770c2e6b]" name="chkResetPwd" duration-ms="3782" started-at="2015-04-22T15:23:56Z" finished-at="2015-04-22T15:23:59Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [* 请输入短信验证码 ] but found [* 请输入短信验证码]]]>
+              <![CDATA[expected [] but found [用户名不存在！]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [* 请输入短信验证码 ] but found [* 请输入短信验证码]
+              <![CDATA[java.lang.AssertionError: expected [] but found [用户名不存在！]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at registsagency.RegAgency.chkRegMobileverify(RegAgency.java:274)
+	at loginagency.IsLoginAgency.chkResetPwd(IsLoginAgency.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,12 +53,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chkRegMobileverify -->
-        <test-method status="PASS" signature="quIt()[pri:0, instance:registsagency.RegAgency@226a82c4]" name="quIt" is-config="true" duration-ms="2672" started-at="2015-04-22T11:28:29Z" finished-at="2015-04-22T11:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quIt -->
-      </class> <!-- registsagency.RegAgency -->
-    </test> <!-- gllys_reg -->
-  </suite> <!-- Gllys_Automation -->
+        </test-method> <!-- chkResetPwd -->
+      </class> <!-- loginagency.IsLoginAgency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

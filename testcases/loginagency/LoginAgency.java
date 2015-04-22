@@ -103,13 +103,14 @@ public class LoginAgency {
 	
 	@Test
 	public void checkWeiXinBtn(){
-		Actions dargger = new Actions(driver);
+		//Actions dargger = new Actions(driver);
 		driver.get(InterFRegister.local);
-		dargger.moveToElement(driver.findElement(By.xpath(InterFRegister.weixin)));
-		wat.waitFor(1000);
-		dargger.clickAndHold(driver.findElement(By.xpath(InterFRegister.weixin))) ;
+		wat.waitFor(7000);
+		driver.findElement(By.xpath(InterFRegister.weixin)).click();
 		wat.waitFor(3000);
-		Assert.assertEquals(du.what(InterFRegister.weixinerweima).isDisplayed(), true);
+		Assert.assertEquals(driver.findElement(By.xpath(InterFRegister.weixinerweima)).isDisplayed(), true);
+
+		
 	
 	}
 	
