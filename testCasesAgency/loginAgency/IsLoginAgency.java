@@ -1,4 +1,4 @@
-package loginagency;
+package loginAgency;
 //alwaysRun 				If set to true, this test method will always be run even if it depends on a method that failed.
 //dataProvider 				The name of the data provider for this test method.
 //dataProviderClass 		The class where to look for the data provider. If not specified, the data provider will be looked on the class of the current test method or one of its base classes. If this attribute is specified, the data provider method needs to be static on the specified class.

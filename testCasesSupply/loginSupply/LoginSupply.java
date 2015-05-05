@@ -1,4 +1,4 @@
-package loginsupply;
+package loginSupply;
 
 public class LoginSupply {
 

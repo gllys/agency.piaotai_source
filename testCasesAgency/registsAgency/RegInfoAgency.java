@@ -1,4 +1,4 @@
-package registsagency;
+package registsAgency;
 
 import java.util.ArrayList;
 import java.util.Arrays;
