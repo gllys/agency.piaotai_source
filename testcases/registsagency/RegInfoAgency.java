@@ -23,7 +23,7 @@ import datasource.BrowsersSet;
 import datasource.BrowsersType;
 import dosource.NewDo;
 
-public class RegInfo {
+public class RegInfoAgency {
 
 	private NewDo du;
 	private WebDriver driver;
