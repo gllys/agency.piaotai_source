@@ -40,6 +40,12 @@ public interface InterFRegister {
 	String userpassword			= "//div/input[@id='password']";
 	String dashswitchpic		= "//div[@id='carousel-example-generic']/ol/li/@class";
 	String resetpwd				= "//div/a[@href='/site/reset/']";
+	String userloginbtn			= "//div/button[@type='submit']";
+	//dashboard
+	String dashlogout			= "//a[@href='/site/logout']";
+	String dashleftlogo			= "//div[@class='header-left']";
+	String dashfirstpage		= "//li[@class='active']/descendant::*";
+	String dashtoptitle			= "//div[@class='btn-group btn-group-option']/descendant::*";
 	//resetpwd
 	String reuseraccount 		= "//input[@id='reset_account']";
 	String reuserveritycode		= "//input[@id='reset_code']";
@@ -52,5 +58,7 @@ public interface InterFRegister {
 	String agencywindowsname   	= "智慧旅游票务平台";
 	//ERROR
 	String regformError 		= "//div/div[@class='formErrorContent']";
-	String reformError			= "//span[@id='chk_account']";
+	String reaccountformError	= "//span[@id='chk_account']";
+	String repwdformError		= "//span[@id='chk_password']";
+	String remessageformError	= "//span[@id='password_message']";
 }

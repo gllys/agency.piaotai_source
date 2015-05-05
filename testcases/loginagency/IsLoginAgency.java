@@ -17,7 +17,7 @@ package loginagency;
 //threadPoolSize 			The size of the thread pool for this method. The method will be invoked from multiple threads as specified by invocationCount.
 //Note: 					this attribute is ignored if invocationCount is not specified 
 
-import java.util.List;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,12 +75,53 @@ public class IsLoginAgency {
 		wat.waitFor(3000);
 		du.what(InterFRegister.regetcodebtn).click();
 		try {
-			WebElement reuseraccounterrorstring = du.what(InterFRegister.reformError);
+			WebElement reuseraccounterrorstring = du.what(InterFRegister.reaccountformError);
 			System.out.println(reuseraccounterrorstring.getText());
 			Assert.assertEquals(reuseraccounterrorstring.getText(),"用户名不存在！");
 		} catch (Exception e) {
 			Assert.assertFalse(false);// TODO: handle exception
 		}
+		du.what(InterFRegister.reuserpwd).sendKeys("12345");
+		du.what(InterFRegister.reuserchkpwd).sendKeys("12345");
+		du.what(InterFRegister.resubmitbtn).click();
+		try {
+			WebElement reuserpwderrorstring = du.what(InterFRegister.repwdformError);
+			System.out.println(reuserpwderrorstring.getText());
+			Assert.assertEquals(reuserpwderrorstring.getText(),"密码必须为6位");
+		} catch (Exception e) {
+			Assert.assertFalse(false);// TODO: handle exception
+		}
+		du.what(InterFRegister.reuserpwd).clear();
+		du.what(InterFRegister.reuserchkpwd).clear();
+		du.what(InterFRegister.reuserpwd).sendKeys("123456");
+		du.what(InterFRegister.reuserchkpwd).sendKeys("123457");
+		du.what(InterFRegister.resubmitbtn).click();
+		try {
+			WebElement reuserMSGerrorstring = du.what(InterFRegister.remessageformError);
+			System.out.println(reuserMSGerrorstring.getText());
+			Assert.assertEquals(reuserMSGerrorstring.getText(),"两次密码输入不一致");
+		} catch (Exception e) {
+			Assert.assertFalse(false);// TODO: handle exception
+		}
 		
+	}
+	@Test(priority = 3)
+	public void chkbtn(){
+		
+		Assert.assertEquals(du.what(InterFRegister.resubmitbtn).isEnabled(), true);
+		Assert.assertEquals(du.what(InterFRegister.returnbackbtn).isEnabled(), true);
+		Assert.assertEquals(du.what(InterFRegister.regetcodebtn).isEnabled(), true);
+		wat.waitFor(3000);
+		du.what(InterFRegister.returnbackbtn).click();
+		wat.waitForElementPresent(InterFRegister.agencywindowsname);
+		Assert.assertEquals(du.what(InterFRegister.dashtitle).isDisplayed(),true);
+	}
+	@Test(priority = 4)
+	public void chkInlogin(){
+		du.what(InterFRegister.useraccount).sendKeys(InterFRegister.useraccountnumber);
+		du.what(InterFRegister.userpassword).sendKeys(InterFRegister.userpasswordnumber);
+		du.what(InterFRegister.userloginbtn).click();
+		wat.waitForElementIsEnable(InterFRegister.dashlogout);
+		Assert.assertEquals(du.what(InterFRegister.dashleftlogo).isDisplayed(), true);
 	}
 }
