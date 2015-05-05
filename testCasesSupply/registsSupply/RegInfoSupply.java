@@ -1,4 +1,4 @@
-package registssupply;
+package registsSupply;
 
 public class RegInfoSupply {
 
