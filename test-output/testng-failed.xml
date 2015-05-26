@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="registsagency.RegInfo">
+      <class name="AllPullMenu.Pulltive">
         <methods>
-          <include name="chkToptitle"/>
           <include name="inialize"/>
+          <include name="chkTicketFavourite"/>
         </methods>
-      </class> <!-- registsagency.RegInfo -->
+      </class> <!-- AllPullMenu.Pulltive -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
