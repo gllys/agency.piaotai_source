@@ -1,65 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="4" passed="4">
-=======
-<testng-results skipped="0" failed="1" total="5" passed="4">
->>>>>>> refs/remotes/origin/gllys
-  <reporter-output>
-  </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="76629" started-at="2015-05-25T02:30:32Z" finished-at="2015-05-25T02:31:49Z">
-=======
-  <suite name="Default suite" duration-ms="20154" started-at="2015-05-26T06:32:17Z" finished-at="2015-05-26T06:32:37Z">
->>>>>>> refs/remotes/origin/gllys
-    <groups>
-    </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="76629" started-at="2015-05-25T02:30:32Z" finished-at="2015-05-25T02:31:49Z">
-      <class name="loginAgency.IsLoginAgency">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:loginAgency.IsLoginAgency@564718df]" name="inialize" is-config="true" duration-ms="22656" started-at="2015-05-25T10:30:32Z" finished-at="2015-05-25T10:30:55Z">
-=======
-    <test name="Default test" duration-ms="20154" started-at="2015-05-26T06:32:17Z" finished-at="2015-05-26T06:32:37Z">
-      <class name="AllPullMenu.Pulltive">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="inialize" is-config="true" duration-ms="9431" started-at="2015-05-26T14:32:17Z" finished-at="2015-05-26T14:32:27Z">
->>>>>>> refs/remotes/origin/gllys
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inialize -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="chkDivError()[pri:0, instance:loginAgency.IsLoginAgency@564718df]" name="chkDivError" duration-ms="10734" started-at="2015-05-25T10:30:55Z" finished-at="2015-05-25T10:31:06Z">
-=======
-        <test-method status="PASS" signature="chkBash()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="chkBash" duration-ms="2270" started-at="2015-05-26T14:32:27Z" finished-at="2015-05-26T14:32:29Z">
->>>>>>> refs/remotes/origin/gllys
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- chkDivError -->
-        <test-method status="PASS" signature="chkResetPwd()[pri:0, instance:loginAgency.IsLoginAgency@564718df]" name="chkResetPwd" duration-ms="7123" started-at="2015-05-25T10:31:06Z" finished-at="2015-05-25T10:31:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkResetPwd -->
-        <test-method status="PASS" signature="chkbtn()[pri:0, instance:loginAgency.IsLoginAgency@564718df]" name="chkbtn" duration-ms="33557" started-at="2015-05-25T10:31:13Z" finished-at="2015-05-25T10:31:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkbtn -->
-        <test-method status="PASS" signature="chkInlogin()[pri:0, instance:loginAgency.IsLoginAgency@564718df]" name="chkInlogin" duration-ms="2540" started-at="2015-05-25T10:31:46Z" finished-at="2015-05-25T10:31:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkInlogin -->
-      </class> <!-- loginAgency.IsLoginAgency -->
-=======
-        </test-method> <!-- chkBash -->
-        <test-method status="PASS" signature="chkTicketCart()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="chkTicketCart" duration-ms="2108" started-at="2015-05-26T14:32:29Z" finished-at="2015-05-26T14:32:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkTicketCart -->
-        <test-method status="FAIL" signature="chkTicketFavourite()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="chkTicketFavourite" duration-ms="2099" started-at="2015-05-26T14:32:31Z" finished-at="2015-05-26T14:32:33Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [ÍÅ¶Ó½áËã¼Û] but found [ÎÒµÄÊÕ²Ø]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [ÍÅ¶Ó½áËã¼Û] but found [ÎÒµÄÊÕ²Ø]
+	=======
+	<testng-results skipped="0" failed="1" total="5" passed="4">
+		>>>>>>> refs/remotes/origin/gllys
+		<reporter-output>
+		</reporter-output>
+		<<<<<<< HEAD
+		<suite name="Default suite" duration-ms="76629" started-at="2015-05-25T02:30:32Z"
+			finished-at="2015-05-25T02:31:49Z">
+			=======
+			<suite name="Default suite" duration-ms="20154" started-at="2015-05-26T06:32:17Z"
+				finished-at="2015-05-26T06:32:37Z">
+				>>>>>>> refs/remotes/origin/gllys
+				<groups>
+				</groups>
+				<<<<<<< HEAD
+				<test name="Default test" duration-ms="76629" started-at="2015-05-25T02:30:32Z"
+					finished-at="2015-05-25T02:31:49Z">
+					<class name="loginAgency.IsLoginAgency">
+						<test-method status="PASS"
+							signature="inialize()[pri:0, instance:loginAgency.IsLoginAgency@564718df]"
+							name="inialize" is-config="true" duration-ms="22656"
+							started-at="2015-05-25T10:30:32Z" finished-at="2015-05-25T10:30:55Z">
+							=======
+							<test name="Default test" duration-ms="20154" started-at="2015-05-26T06:32:17Z"
+								finished-at="2015-05-26T06:32:37Z">
+								<class name="AllPullMenu.Pulltive">
+									<test-method status="PASS"
+										signature="inialize()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+										name="inialize" is-config="true" duration-ms="9431"
+										started-at="2015-05-26T14:32:17Z" finished-at="2015-05-26T14:32:27Z">
+										>>>>>>> refs/remotes/origin/gllys
+										<reporter-output>
+										</reporter-output>
+									</test-method> <!-- inialize -->
+									<<<<<<< HEAD
+									<test-method status="PASS"
+										signature="chkDivError()[pri:0, instance:loginAgency.IsLoginAgency@564718df]"
+										name="chkDivError" duration-ms="10734" started-at="2015-05-25T10:30:55Z"
+										finished-at="2015-05-25T10:31:06Z">
+										=======
+										<test-method status="PASS"
+											signature="chkBash()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+											name="chkBash" duration-ms="2270" started-at="2015-05-26T14:32:27Z"
+											finished-at="2015-05-26T14:32:29Z">
+											>>>>>>> refs/remotes/origin/gllys
+											<reporter-output>
+											</reporter-output>
+											<<<<<<< HEAD
+										</test-method> <!-- chkDivError -->
+										<test-method status="PASS"
+											signature="chkResetPwd()[pri:0, instance:loginAgency.IsLoginAgency@564718df]"
+											name="chkResetPwd" duration-ms="7123" started-at="2015-05-25T10:31:06Z"
+											finished-at="2015-05-25T10:31:13Z">
+											<reporter-output>
+											</reporter-output>
+										</test-method> <!-- chkResetPwd -->
+										<test-method status="PASS"
+											signature="chkbtn()[pri:0, instance:loginAgency.IsLoginAgency@564718df]"
+											name="chkbtn" duration-ms="33557" started-at="2015-05-25T10:31:13Z"
+											finished-at="2015-05-25T10:31:46Z">
+											<reporter-output>
+											</reporter-output>
+										</test-method> <!-- chkbtn -->
+										<test-method status="PASS"
+											signature="chkInlogin()[pri:0, instance:loginAgency.IsLoginAgency@564718df]"
+											name="chkInlogin" duration-ms="2540" started-at="2015-05-25T10:31:46Z"
+											finished-at="2015-05-25T10:31:49Z">
+											<reporter-output>
+											</reporter-output>
+										</test-method> <!-- chkInlogin -->
+								</class> <!-- loginAgency.IsLoginAgency -->
+								=======
+						</test-method> <!-- chkBash -->
+						<test-method status="PASS"
+							signature="chkTicketCart()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+							name="chkTicketCart" duration-ms="2108" started-at="2015-05-26T14:32:29Z"
+							finished-at="2015-05-26T14:32:31Z">
+							<reporter-output>
+							</reporter-output>
+						</test-method> <!-- chkTicketCart -->
+						<test-method status="FAIL"
+							signature="chkTicketFavourite()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+							name="chkTicketFavourite" duration-ms="2099" started-at="2015-05-26T14:32:31Z"
+							finished-at="2015-05-26T14:32:33Z">
+							<exception class="java.lang.AssertionError">
+								<message>
+              <![CDATA[expected [ï¿½Å¶Ó½ï¿½ï¿½ï¿½ï¿½] but found [ï¿½Òµï¿½ï¿½Õ²ï¿½]]]>
+								</message>
+								<full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ï¿½Å¶Ó½ï¿½ï¿½ï¿½ï¿½] but found [ï¿½Òµï¿½ï¿½Õ²ï¿½]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
@@ -91,21 +122,27 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkTicketFavourite -->
-        <test-method status="PASS" signature="chkTicketGroup()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="chkTicketGroup" duration-ms="2101" started-at="2015-05-26T14:32:33Z" finished-at="2015-05-26T14:32:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkTicketGroup -->
-        <test-method status="PASS" signature="chkTicketSale()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]" name="chkTicketSale" duration-ms="2116" started-at="2015-05-26T14:32:35Z" finished-at="2015-05-26T14:32:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chkTicketSale -->
-      </class> <!-- AllPullMenu.Pulltive -->
->>>>>>> refs/remotes/origin/gllys
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
+								</full-stacktrace>
+							</exception> <!-- java.lang.AssertionError -->
+							<reporter-output>
+							</reporter-output>
+						</test-method> <!-- chkTicketFavourite -->
+						<test-method status="PASS"
+							signature="chkTicketGroup()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+							name="chkTicketGroup" duration-ms="2101" started-at="2015-05-26T14:32:33Z"
+							finished-at="2015-05-26T14:32:35Z">
+							<reporter-output>
+							</reporter-output>
+						</test-method> <!-- chkTicketGroup -->
+						<test-method status="PASS"
+							signature="chkTicketSale()[pri:0, instance:AllPullMenu.Pulltive@4f9a3314]"
+							name="chkTicketSale" duration-ms="2116" started-at="2015-05-26T14:32:35Z"
+							finished-at="2015-05-26T14:32:37Z">
+							<reporter-output>
+							</reporter-output>
+						</test-method> <!-- chkTicketSale -->
+					</class> <!-- AllPullMenu.Pulltive -->
+					>>>>>>> refs/remotes/origin/gllys
+				</test> <!-- Default test -->
+			</suite> <!-- Default suite -->
+	</testng-results>

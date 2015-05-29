@@ -1,8 +1,8 @@
 <suite name="Gllys_Automation">
-	 <test name="gllys_reg"  preserve-order="true">
-    <classes>
-       <class  name="registsagency.RegAgency"></class>
-       <class  name="registsagency.InRegAgency"></class>      
-    </classes>
-  </test> 
+	<test name="gllys_reg" preserve-order="true">
+		<classes>
+			<class name="registsagency.RegAgency"></class>
+			<class name="registsagency.InRegAgency"></class>
+		</classes>
+	</test>
 </suite>
