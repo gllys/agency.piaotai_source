@@ -6,7 +6,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry excluding="chkTitleCart/" kind="src" path="testCasesAgency"/>
+=======
+	<classpathentry kind="src" path="testCasesAgency"/>
+>>>>>>> refs/remotes/origin/gllys
 	<classpathentry kind="src" path="testCasesSupply"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
