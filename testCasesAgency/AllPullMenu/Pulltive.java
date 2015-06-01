@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 
 //import com.thoughtworks.selenium.Selenium;
 
+
+import asuites.agencyLogin;
 import pagesbuilt.InterFLogin;
 import pagesbuilt.InterFRegister;
 import waitsource.wait;
@@ -20,39 +22,18 @@ import dosource.NewDo;
 import errormessage.ErrorCode;
 
 public class Pulltive {
-
-	private WebDriver driver;
-	private NewDo du;
-	private wait wat;
 	//private Actions action;
-	
+
+	 private WebDriver driver;
+	 private NewDo du;
+	 private wait wat;
 	@BeforeClass
-	public void inialize()
+	public void init()
 	{
-		BrowsersSet browser = new BrowsersSet(BrowsersType.chrome);
-		driver = browser.web_driver;
-		du = new NewDo(driver);
-		wat = new wait(driver);
-		//action = new Actions(driver);
-		driver.manage().window().maximize();
-		driver.get(InterFRegister.local);	
-		
-		
-			wat.waitForElementPresent(InterFRegister.dashpicture);
-			try{
-			du.what(InterFRegister.useraccount).sendKeys(InterFRegister.useraccountnumber);
-			du.what(InterFRegister.userpassword).sendKeys(InterFRegister.userpasswordnumber);
-			du.what(InterFRegister.userloginbtn).click();
-			}
-			catch(Exception e)
-			{
-				System.out.println(e+ErrorCode.nosource);
-			}
-		}
-		
+	agencyLogin.inialize();
 	
-	
-	
+	}
+		
 	@Test
 	public void chkBash()
 	{

@@ -11,10 +11,10 @@ import errormessage.ErrorCode;
 
 public class agencyLogin {
 
-	private WebDriver driver;
-	private NewDo du;
-	private wait wat;
-	public  void inialize (){
+	static private WebDriver driver;
+	static private NewDo du;
+	static private wait wat;
+	public static void inialize (){
 	
 	BrowsersSet browser = new BrowsersSet(BrowsersType.chrome);
 	driver = browser.web_driver;
