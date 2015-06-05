@@ -35,7 +35,7 @@ public class Pulltive {
 	}
 		
 	@Test
-	public void chkBash()
+	public void chkTicketBash()
 	{
 	    Assert.assertEquals(du.what(InterFLogin.ticket).isEnabled(),true);
 //	    du.what(InterFLogin.ticket).click();
@@ -109,8 +109,11 @@ public class Pulltive {
 				catch(Exception e)
 				{System.out.println(e+ErrorCode.nosource);}	
 	}
-	
-	
+	@Test
+	public void chkOrderBash()
+	{
+		
+	}
 }
 
 
