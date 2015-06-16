@@ -15,9 +15,9 @@ public interface InterFLogin {
 	String cart 	= "//li[1]/ul/li[3]"; String cartName	  = "//ul/li/h4[1]";
 	String favourite= "//li[1]/ul/li[4]"; String favouriteName= "//ul/li/h4[1]";
 //order
-	String ordermanage	= "//li[2]/ul/li[1]";
-	String refundorder  = "//li[2]/ul/li[2]";
-	String applycheck	= "//li[2]/ul/li[3]";
+	String ordermanage	= "//li[2]/ul/li[1]";String ordermanageName	="//div[@class=\"contentpanel\"]/div/div/ul/li[1]/h4";
+	String refundorder  = "//li[2]/ul/li[2]";String refundorderName	="";
+	String applycheck	= "//li[2]/ul/li[3]";String applycheckName	="";
 //balance
 	String shouldpayment= "//li[3]/ul/li[1]";
 	String platform		= "//li[3]/ul/li[2]";

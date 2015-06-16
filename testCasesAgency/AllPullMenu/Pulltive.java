@@ -112,7 +112,16 @@ public class Pulltive {
 	@Test
 	public void chkOrderBash()
 	{
-		
+		try {
+			du.what(InterFLogin.order).click();
+			wat.waitFor(2000);
+			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(), true);
+			
+			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(), true);
+			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(), true);
+		} catch (Exception e) {
+			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
+		}
 	}
 }
 
