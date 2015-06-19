@@ -1,17 +1,16 @@
 package asuites;
 
 import org.openqa.selenium.*;
-import org.testng.*;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-import com.thoughtworks.selenium.Wait;
 
 import datasource.BrowsersType;
 import datasource.BrowsersSet;
 import dosource.Do;
-import waitsource.*;
+
 
 
 public class  Login  {
