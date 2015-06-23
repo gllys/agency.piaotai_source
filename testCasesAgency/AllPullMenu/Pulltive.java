@@ -135,7 +135,7 @@ public class Pulltive {
 				Assert.fail();
 				}
 			du.what(InterFLogin.ordermanage).click();
-			Assert.assertEquals("class=active", du.what(InterFLogin.ordermanage + "/@class"));
+			Assert.assertEquals(du.what(InterFLogin.ordermanage + "/@class"),"class=active");
 		} catch (Exception e) {
 			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
 		}
@@ -144,7 +144,7 @@ public class Pulltive {
 	public void chkOrderRefund()
 	{
 		try {
-			du.what(InterFLogin.refundorder).isEnabled();
+			Assert.assertEquals(du.what(InterFLogin.refundorder).isEnabled(),true);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
