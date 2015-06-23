@@ -1,4 +1,5 @@
 package AllPullMenu;
+
 /**
  * 登录页面左侧Pull菜单显示以及按钮功能chk
  */
@@ -12,8 +13,6 @@ import org.testng.annotations.Test;
 
 //import com.thoughtworks.selenium.Selenium;
 
-
-
 import asuites.agencyLogin;
 import pagesbuilt.InterFLogin;
 import pagesbuilt.InterFRegister;
@@ -24,137 +23,232 @@ import dosource.NewDo;
 import errormessage.ErrorCode;
 
 public class Pulltive {
-	//private Actions action;
+	// private Actions action;
 
-	 private WebDriver driver;
-	 private NewDo du;
-	 private wait wat;
+	private WebDriver driver;
+	private NewDo du;
+	private wait wat;
+
 	@BeforeClass
-	public void init()
-	{
-	agencyLogin.inialize();
-	
+	public void init() {
+		agencyLogin.inialize();
+
 	}
-		
+
 	@Test
-	public void chkTicketBash()
-	{
-	    Assert.assertEquals(du.what(InterFLogin.ticket).isEnabled(),true);
-//	    du.what(InterFLogin.ticket).click();
-//	    du.waitFor(2000);
-	    du.waitFor(2000);
-	   try{ 
-		System.out.println(du.what(InterFLogin.sale+"/a").getText());
-	    Assert.assertEquals(du.what(InterFLogin.sale).isDisplayed(),true);
-	    System.out.println(du.what(InterFLogin.group+"/a").getText());
-	    Assert.assertEquals(du.what(InterFLogin.group).isDisplayed(),true);
-	    System.out.println(du.what(InterFLogin.cart+"/a").getText());
-	    Assert.assertEquals(du.what(InterFLogin.cart).isDisplayed(),true);
-	    System.out.println(du.what(InterFLogin.favourite+"/a").getText());
-	    Assert.assertEquals(du.what(InterFLogin.favourite).isDisplayed(),true);
-	   }
-	catch(Exception e)
-	   {
-		System.out.println(e);
-	   }
-	}
-	
-	@Test
-	public void chkTicketSale()//门票&&门票下的子页按钮&&文字确认
-	{
-				try{	
-				du.what(InterFLogin.sale).click();
-				wat.waitFor(2000);
-				System.out.println(du.what(InterFLogin.saleName).getText());
-				Assert.assertEquals(du.what(InterFLogin.saleName).getText(),"散客结算价");
-				
-				}
-				catch(Exception e)
-				{System.out.println(e+ErrorCode.nosource);}	
-	}
-	@Test
-	public void chkTicketGroup()
-	{
-				try{	
-				du.what(InterFLogin.group).click();
-				wat.waitFor(2000);
-				System.out.println(du.what(InterFLogin.groupName).getText());
-				Assert.assertEquals(du.what(InterFLogin.groupName).getText(),"团队结算价");
-				
-				}
-				catch(Exception e)
-				{System.out.println(e+ErrorCode.nosource);}	
-	}
-	@Test
-	public void chkTicketCart()
-	{
-				try{	
-				du.what(InterFLogin.cart).click();
-				wat.waitFor(2000);
-				System.out.println(du.what(InterFLogin.cartName).getText());
-				Assert.assertEquals(du.what(InterFLogin.cartName).getText(),"我的购物车");
-				
-				}
-				catch(Exception e)
-				{System.out.println(e+ErrorCode.nosource);}	
-	}
-	@Test
-	public void chkTicketFavourite()
-	{
-				try{	
-				du.what(InterFLogin.favourite).click();
-				wat.waitFor(2000);
-				System.out.println(du.what(InterFLogin.favouriteName).getText());
-				Assert.assertEquals(du.what(InterFLogin.favouriteName).getText(),"我的收藏");
-				
-				}
-				catch(Exception e)
-				{System.out.println(e+ErrorCode.nosource);}	
-	}
-	@Test
-	public void chkOrderBash()//订单&&下级子页&&文字确认
-	{
+	public void chkTicketBash() {//门票
+		Assert.assertEquals(du.what(InterFLogin.ticket).isEnabled(), true);
+		// du.what(InterFLogin.ticket).click();
+		// du.waitFor(2000);
+		du.waitFor(2000);
 		try {
-			for(int sum = 0;sum<3;sum++){
-			du.what(InterFLogin.order).click();
-			wat.waitFor(2000);}
-			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(), true);
-			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(), true);
-			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.sale + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.sale).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.group + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.group).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.cart + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.cart).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.favourite + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.favourite).isDisplayed(),
+					true);
 		} catch (Exception e) {
-			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
+			System.out.println(e);
 		}
 	}
+
 	@Test
-	public void chkOrderTicket()
+	public void chkTicketSale()// 门票&&门票下的子页按钮&&文字确认
 	{
 		try {
-			if(!du.what(InterFLogin.ordermanage).isEnabled())
-			{
+			du.what(InterFLogin.sale).click();
+			wat.waitFor(2000);
+			System.out.println(du.what(InterFLogin.saleName).getText());
+			Assert.assertEquals(du.what(InterFLogin.saleName).getText(),
+					"散客结算价");
+
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);
+		}
+	}
+
+	@Test
+	public void chkTicketGroup() {
+		try {
+			du.what(InterFLogin.group).click();
+			wat.waitFor(2000);
+			System.out.println(du.what(InterFLogin.groupName).getText());
+			Assert.assertEquals(du.what(InterFLogin.groupName).getText(),
+					"团队结算价");
+
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);
+		}
+	}
+
+	@Test
+	public void chkTicketCart() {
+		try {
+			du.what(InterFLogin.cart).click();
+			wat.waitFor(2000);
+			System.out.println(du.what(InterFLogin.cartName).getText());
+			Assert.assertEquals(du.what(InterFLogin.cartName).getText(),
+					"我的购物车");
+
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);
+		}
+	}
+
+	@Test
+	public void chkTicketFavourite() {
+		try {
+			du.what(InterFLogin.favourite).click();
+			wat.waitFor(2000);
+			System.out.println(du.what(InterFLogin.favouriteName).getText());
+			Assert.assertEquals(du.what(InterFLogin.favouriteName).getText(),
+					"我的收藏");
+
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);
+		}
+	}
+
+	@Test
+	public void chkOrderBash()// 订单&&下级子页&&文字确认
+	{
+		try {	Assert.assertEquals(du.what(InterFLogin.order).isEnabled(), true);
+		du.waitFor(2000);
+		try {
+			System.out.println(du.what(InterFLogin.ordermanage + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.ordermanageName).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.refundorder + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.refundorderName).isDisplayed(), true);
+			System.out.println(du.what(InterFLogin.applycheck + "/a").getText());
+			Assert.assertEquals(du.what(InterFLogin.applycheckName).isDisplayed(), true);
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.order).click();
+				wat.waitFor(2000);
+			}
+			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(),
+					true);
+			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(),
+					true);
+			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(),
+					true);
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
+		}
+	}
+
+	@Test
+	public void chkOrderTicket() {
+		try {
+			if (!du.what(InterFLogin.ordermanage).isEnabled()) {
 				System.out.println("订单管理按钮失效");
 				Assert.fail();
-				}
-			du.what(InterFLogin.ordermanage).click();
-			Assert.assertEquals(du.what(InterFLogin.ordermanage + "/@class"),"class=active");
+			}
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.ordermanage).click();
+
+			}
+			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(),
+					true);
+			Assert.assertEquals(du.what(InterFLogin.ordermanage + "/@class"),
+					"class=active");
 		} catch (Exception e) {
-			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
+		}
+	}
+
+	@Test
+	public void chkOrderRefund() {
+		try {
+			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(),
+					true);
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.refundorder).click();
+
+			}
+			Assert.assertEquals(du.what(InterFLogin.refundorderName)
+					.isEnabled(), true);
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
+		}
+	}
+
+	@Test
+	public void chkOrderApplyCheck() {
+		try {
+			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(),
+					true);
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.applycheck).click();
+			}
+			Assert.assertEquals(
+					du.what(InterFLogin.applycheckName).isEnabled(), true);
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}
 	}
 	@Test
-	public void chkOrderRefund()
-	{
+	public void chkAddUp(){//统计页面
 		try {
-			Assert.assertEquals(du.what(InterFLogin.refundorder).isEnabled(),true);
+			try {
+				System.out.println(du.what(InterFLogin.addup + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.addupbuyName).isDisplayed(), true);
+
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+			Assert.assertEquals(du.what(InterFLogin.addup).isDisplayed(),
+					true);
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.addup).click();
+			}
+			Assert.assertEquals(
+					du.what(InterFLogin.addupbuyName).isEnabled(), true);
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}
 	}
+	@Test
+	public void chkBalance(){//结算
+		try {
+			try {
+				System.out.println(du.what(InterFLogin.shouldpayment + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.shouldpaymentName).isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.platform + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.platformName).isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.property + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.propertyName).isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.blotter + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.blotterName).isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.bankcard + "/a").getText());
+				Assert.assertEquals(du.what(InterFLogin.bankcardName).isDisplayed(), true);
+
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+			Assert.assertEquals(du.what(InterFLogin.balance).isDisplayed(),
+					true);
+			for (int sum = 0; sum < 3; sum++) {
+				du.what(InterFLogin.balance).click();
+			}
+			Assert.assertEquals(
+					du.what(InterFLogin.shouldpayment).isEnabled(), true);
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
+		}
+	}
+
 	@AfterClass
-	public void closeWinHandle(){
+	public void closeWinHandle() {
 		driver.close();
 		driver.quit();
-		
+
 	}
 }
-
-
