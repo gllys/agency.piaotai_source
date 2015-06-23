@@ -2,8 +2,9 @@ package pagesbuilt;
 
 /**
  * 
- * @author Gllys Zhang
- *
+ * @author gllys
+ * @see    agency登录前所有xpath,从左至右顺序,从上至下
+ * ?+Name作确认使用
  */
 public interface InterFRegister {
 
@@ -55,7 +56,7 @@ public interface InterFRegister {
 	String resubmitbtn			= "//button[@id='reset_pwd']";
 	String returnbackbtn		= "//div/a[@class='btn btn-default btn-block']";
 	//handle
-	String agencywindowsname   	= "�ǻ�����Ʊ��ƽ̨";
+	String agencywindowsname   	= "智慧旅游票务";
 	//ERROR
 	String regformError 		= "//div/div[@class='formErrorContent']";
 	String reaccountformError	= "//span[@id='chk_account']";

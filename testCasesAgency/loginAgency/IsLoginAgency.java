@@ -54,7 +54,7 @@ public class IsLoginAgency {
 		try {
 			WebElement useraccountNUllchk = du.what(InterFRegister.regformError);
 			System.out.println(useraccountNUllchk.getText());
-			Assert.assertEquals(useraccountNUllchk.getText(), "* ´Ë´¦²»¿É¿Õ°×");
+			Assert.assertEquals(useraccountNUllchk.getText(), "* ï¿½Ë´ï¿½ï¿½ï¿½ï¿½É¿Õ°ï¿½");
 		} catch (Exception e) {
 		System.out.println(e);	// TODO: handle exception
 		}
@@ -63,7 +63,7 @@ public class IsLoginAgency {
 		try {
 			WebElement userpasswordNUllchk = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordNUllchk.getText());
-			Assert.assertEquals(userpasswordNUllchk.getText(), "* ´Ë´¦²»¿É¿Õ°×");
+			Assert.assertEquals(userpasswordNUllchk.getText(), "* ï¿½Ë´ï¿½ï¿½ï¿½ï¿½É¿Õ°ï¿½");
 		} catch (Exception e) {
 		System.out.println(e);	// TODO: handle exception
 		}
@@ -77,7 +77,7 @@ public class IsLoginAgency {
 		try {
 			WebElement reuseraccounterrorstring = du.what(InterFRegister.reaccountformError);
 			System.out.println(reuseraccounterrorstring.getText());
-			Assert.assertEquals(reuseraccounterrorstring.getText(),"ÓÃ»§Ãû²»´æÔÚ£¡");
+			Assert.assertEquals(reuseraccounterrorstring.getText(),"ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½");
 		} catch (Exception e) {
 			Assert.assertFalse(false);// TODO: handle exception
 		}
@@ -87,7 +87,7 @@ public class IsLoginAgency {
 		try {
 			WebElement reuserpwderrorstring = du.what(InterFRegister.repwdformError);
 			System.out.println(reuserpwderrorstring.getText());
-			Assert.assertEquals(reuserpwderrorstring.getText(),"ÃÜÂë±ØÐëÎª6Î»");
+			Assert.assertEquals(reuserpwderrorstring.getText(),"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª6Î»");
 		} catch (Exception e) {
 			Assert.assertFalse(false);// TODO: handle exception
 		}
@@ -99,7 +99,7 @@ public class IsLoginAgency {
 		try {
 			WebElement reuserMSGerrorstring = du.what(InterFRegister.remessageformError);
 			System.out.println(reuserMSGerrorstring.getText());
-			Assert.assertEquals(reuserMSGerrorstring.getText(),"Á½´ÎÃÜÂëÊäÈë²»Ò»ÖÂ");
+			Assert.assertEquals(reuserMSGerrorstring.getText(),"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë²»Ò»ï¿½ï¿½");
 		} catch (Exception e) {
 			Assert.assertFalse(false);// TODO: handle exception
 		}
@@ -123,5 +123,10 @@ public class IsLoginAgency {
 		du.what(InterFRegister.userloginbtn).click();
 		wat.waitForElementIsEnable(InterFRegister.dashlogout);
 		Assert.assertEquals(du.what(InterFRegister.dashleftlogo).isDisplayed(), true);
+	}
+	public void closeWinHandle(){
+		driver.close();
+		driver.quit();
+		
 	}
 }

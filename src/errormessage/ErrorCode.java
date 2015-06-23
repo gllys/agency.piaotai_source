@@ -2,7 +2,7 @@ package errormessage;
 
 public interface ErrorCode {
 
-	String nosource = "找不到制定的元素(xpath路径错误)";
+	String nosource = "鎵句笉鍒板埗瀹氱殑鍏冪礌(xpath璺緞閿欒)";
 	
 	
 }

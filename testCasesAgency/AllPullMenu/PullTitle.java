@@ -1,13 +1,15 @@
 package AllPullMenu;
 
 /**
- * È·ÈÏÊ×Ò³ËùÓĞ·ÖÖ§Ò³Ãæ£¬tabÒ³Ãæ£¬ÏÔÊ¾Çé¿ö
+ * ç¡®è®¤é¦–é¡µæ‰€æœ‰åˆ†æ”¯é¡µé¢ï¼Œtabé¡µé¢ï¼Œæ˜¾ç¤ºæƒ…å†µ
  */
 //import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import pagesbuilt.InterFLoginTitle;
 import waitsource.wait;
 import dosource.NewDo;
@@ -39,13 +41,13 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Msg).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Msg).isEnabled(),
-					"ÉÏĞĞÒ³ÃæÏûÏ¢°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢æ¶ˆæ¯æŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 			wat.waitFor(1000);
 		    for(int num=0;num<3;num++){
 		    	du.what(InterFLoginTitle.Msg).click();	
 		    }
 		    Assert.assertTrue(du.what(InterFLoginTitle.MsgName).isEnabled(),
-					"ÉÏĞĞÒ³ÃæÏûÏ¢°´Å¥µã»÷ÇĞ»»ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢æ¶ˆæ¯æŒ‰é’®ç‚¹å‡»åˆ‡æ¢æ˜¾ç¤ºæ­£å¸¸");
 
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);
@@ -58,7 +60,7 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Cart).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Cart).isEnabled(),
-					"ÉÏĞĞÒ³Ãæ¹ºÎï³µ°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢è´­ç‰©è½¦æŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 			
 
 		} catch (Exception e) {
@@ -72,7 +74,7 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Cart).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Cart).isEnabled(),
-					"ÉÏĞĞÒ³Ãæ¹ºÎï³µ°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢è´­ç‰©è½¦æŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);
@@ -85,7 +87,7 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Cart).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Cart).isEnabled(),
-					"ÉÏĞĞÒ³Ãæ¹¤×÷Ì¨°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢å·¥ä½œå°æŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);
@@ -98,7 +100,7 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Help).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Help).isEnabled(),
-					"ÉÏĞĞÒ³Ãæ°ïÖú°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢å¸®åŠ©æŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);
@@ -111,10 +113,16 @@ public class PullTitle {
 			Assert.assertEquals(du.what(InterFLoginTitle.Exit).isDisplayed(),
 					true);
 			Assert.assertTrue(du.what(InterFLoginTitle.Exit).isEnabled(),
-					"ÉÏĞĞÒ³ÃæÍË³ö°´Å¥ÏÔÊ¾Õı³£");
+					"ä¸Šè¡Œé¡µé¢é€€å‡ºæŒ‰é’®æ˜¾ç¤ºæ­£å¸¸");
 
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);
 		}
+	}
+	@AfterClass
+	public void closeWinHandle(){
+		driver.close();
+		driver.quit();
+		
 	}
 }

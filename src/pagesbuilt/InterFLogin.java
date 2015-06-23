@@ -1,5 +1,10 @@
 package pagesbuilt;
-
+/**
+ * 
+ * @author gllys
+ * @see    agency登录后所有xpath,从左至右顺序,从上至下
+ * ?+Name作确认使用
+ */
 public interface InterFLogin {
 	//left menu
 	String ticket 	= "//a[@id='drop_1']";

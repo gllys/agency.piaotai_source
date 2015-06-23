@@ -1,6 +1,6 @@
 package AllPullMenu;
 /**
- * µÇÂ¼Ò³Ãæ×ó²àPull²Ëµ¥ÏÔÊ¾ÒÔ¼°°´Å¥¹¦ÄÜchk
+ * ç™»å½•é¡µé¢å·¦ä¾§Pullèœå•æ˜¾ç¤ºä»¥åŠæŒ‰é’®åŠŸèƒ½chk
  */
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Action;
@@ -64,7 +64,7 @@ public class Pulltive {
 				du.what(InterFLogin.sale).click();
 				wat.waitFor(2000);
 				System.out.println(du.what(InterFLogin.saleName).getText());
-				Assert.assertEquals(du.what(InterFLogin.saleName).getText(),"É¢¿Í½áËã¼Û");
+				Assert.assertEquals(du.what(InterFLogin.saleName).getText(),"æ•£å®¢ç»“ç®—ä»·");
 				
 				}
 				catch(Exception e)
@@ -77,7 +77,7 @@ public class Pulltive {
 				du.what(InterFLogin.group).click();
 				wat.waitFor(2000);
 				System.out.println(du.what(InterFLogin.groupName).getText());
-				Assert.assertEquals(du.what(InterFLogin.groupName).getText(),"ÍÅ¶Ó½áËã¼Û");
+				Assert.assertEquals(du.what(InterFLogin.groupName).getText(),"å›¢é˜Ÿç»“ç®—ä»·");
 				
 				}
 				catch(Exception e)
@@ -90,7 +90,7 @@ public class Pulltive {
 				du.what(InterFLogin.cart).click();
 				wat.waitFor(2000);
 				System.out.println(du.what(InterFLogin.cartName).getText());
-				Assert.assertEquals(du.what(InterFLogin.cartName).getText(),"ÎÒµÄ¹ºÎï³µ");
+				Assert.assertEquals(du.what(InterFLogin.cartName).getText(),"æˆ‘çš„è´­ç‰©è½¦");
 				
 				}
 				catch(Exception e)
@@ -103,7 +103,7 @@ public class Pulltive {
 				du.what(InterFLogin.favourite).click();
 				wat.waitFor(2000);
 				System.out.println(du.what(InterFLogin.favouriteName).getText());
-				Assert.assertEquals(du.what(InterFLogin.favouriteName).getText(),"ÎÒµÄÊÕ²Ø");
+				Assert.assertEquals(du.what(InterFLogin.favouriteName).getText(),"æˆ‘çš„æ”¶è—");
 				
 				}
 				catch(Exception e)
@@ -122,6 +122,11 @@ public class Pulltive {
 		} catch (Exception e) {
 			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
 		}
+	}
+	public void closeWinHandle(){
+		driver.close();
+		driver.quit();
+		
 	}
 }
 
