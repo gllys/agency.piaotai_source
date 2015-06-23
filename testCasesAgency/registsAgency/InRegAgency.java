@@ -48,17 +48,17 @@ public class InRegAgency {
 		SimplyHomePage simplyhomepage = new SimplyHomePage(driver);
 		SimplyRegisterOnAgency simplyregisteronagency = new SimplyRegisterOnAgency(driver);
 
-		// ³õÊ¼»¯2¸ö·â×°ºó±ã¿ÉÒÔµ÷ÓÃ
+		// åˆå§‹åŒ–2ä¸ªå°è£…åä¾¿å¯ä»¥è°ƒç”¨
 		/**
 		 * Description :JS to specific window.
 		 * 
-		 * @author £ºGllys
+		 * @author ï¼šGllys
 		 * @see :
 		 * @param :
 		 * @return : void
-		 * @create £º2015-04-20
+		 * @create ï¼š2015-04-20
 		 * @exception :
-		 * @version £º1.0
+		 * @version ï¼š1.0
 		 **/
 
 		try {

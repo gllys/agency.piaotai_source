@@ -6,10 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 //import com.thoughtworks.selenium.Selenium;
+
 
 
 import asuites.agencyLogin;
@@ -58,7 +60,7 @@ public class Pulltive {
 	}
 	
 	@Test
-	public void chkTicketSale()
+	public void chkTicketSale()//门票&&门票下的子页按钮&&文字确认
 	{
 				try{	
 				du.what(InterFLogin.sale).click();
@@ -110,19 +112,44 @@ public class Pulltive {
 				{System.out.println(e+ErrorCode.nosource);}	
 	}
 	@Test
-	public void chkOrderBash()
+	public void chkOrderBash()//订单&&下级子页&&文字确认
 	{
 		try {
+			for(int sum = 0;sum<3;sum++){
 			du.what(InterFLogin.order).click();
-			wat.waitFor(2000);
+			wat.waitFor(2000);}
 			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(), true);
-			
 			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(), true);
 			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(), true);
 		} catch (Exception e) {
 			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
 		}
 	}
+	@Test
+	public void chkOrderTicket()
+	{
+		try {
+			if(!du.what(InterFLogin.ordermanage).isEnabled())
+			{
+				System.out.println("订单管理按钮失效");
+				Assert.fail();
+				}
+			du.what(InterFLogin.ordermanage).click();
+			Assert.assertEquals("class=active", du.what(InterFLogin.ordermanage + "/@class"));
+		} catch (Exception e) {
+			System.out.println(e+ErrorCode.nosource);// TODO: handle exception
+		}
+	}
+	@Test
+	public void chkOrderRefund()
+	{
+		try {
+			du.what(InterFLogin.refundorder).isEnabled();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	@AfterClass
 	public void closeWinHandle(){
 		driver.close();
 		driver.quit();

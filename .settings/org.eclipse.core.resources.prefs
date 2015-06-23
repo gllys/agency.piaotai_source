@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
+encoding//controllers/RegAgency.xml=UTF-8
 encoding//testCasesAgency/AllPullMenu=UTF-8
 encoding//testCasesAgency/AllPullMenu/Pulltive.java=UTF-8
+encoding//testCasesAgency/loginAgency/LoginAgency.java=UTF-8
+encoding//testCasesAgency/registsAgency/RegAgency.java=UTF-8
+encoding//testCasesAgency/registsAgency/RegInfoAgency.java=UTF-8
 encoding/<project>=UTF-8

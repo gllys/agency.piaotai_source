@@ -45,7 +45,7 @@ public class RegInfoAgency {
 	
 	@Test
 	public void chkFirstpage(){
-		Assert.assertEquals(du.what(InterFRegister.dashfirstpage).getText(),"É¢¿ÍÔ¤¶¨");	
+		Assert.assertEquals(du.what(InterFRegister.dashfirstpage).getText(),"æ•£å®¢é¢„å®š");	
 	}
 	@Test
 	public void chkToptitle(){
@@ -53,13 +53,13 @@ public class RegInfoAgency {
 		List<String> tmp = new ArrayList<String>();
 		List<WebElement> alltoptitles = du.whats(InterFRegister.dashtoptitle);
 		List<String> chklist = new ArrayList<String>();
-//		 "ÏûÏ¢","¹ºÎï³µ","ÊÕ²Ø","¹¤×÷Ì¨","ÔÚÏß°ïÖú","ÍË³ö"
-		chklist.add("ÏûÏ¢");
-		chklist.add("¹ºÎï³µ");
-		chklist.add("ÊÕ²Ø");
-		chklist.add("¹¤×÷Ì¨");
-		chklist.add("ÔÚÏß°ïÖú");
-		chklist.add("ÍË³ö");
+//		 "æ¶ˆæ¯","è´­ç‰©è½¦","æ”¶è—","å·¥ä½œå°","åœ¨çº¿å¸®åŠ©","é€€å‡º"
+		chklist.add("æ¶ˆæ¯");
+		chklist.add("è´­ç‰©è½¦");
+		chklist.add("æ”¶è—");
+		chklist.add("å·¥ä½œå°");
+		chklist.add("åœ¨çº¿å¸®åŠ©");
+		chklist.add("é€€å‡º");
 		String[] AAAA    = new String[80];
 		for(WebElement eachtoptitles : alltoptitles){
 			AAAA[n] = eachtoptitles.getText();

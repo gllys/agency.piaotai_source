@@ -51,7 +51,7 @@ public class LoginAgency {
 		driver.get(InterFRegister.local);
 		wat.waitForElementPresent(InterFRegister.dashpicture);
 		List<WebElement> alltitles = du.whats(InterFRegister.dashtitle);
-		String[] titlelist = { "首页", "票台介绍", "如何入驻", "配套设备", "合作资质", "联系我们" };
+		String[] titlelist = { "棣栭〉", "绁ㄥ彴浠嬬粛", "濡備綍鍏ラ┗", "閰嶅璁惧", "鍚堜綔璧勮川", "鑱旂郴鎴戜滑" };
 		int num = 0;
 		for (WebElement eachtitle : alltitles) {
 			Assert.assertEquals(eachtitle.getText(), titlelist[num]);
@@ -93,7 +93,7 @@ public class LoginAgency {
 			titlename = driver.switchTo().window(handle).getTitle();
 		}
 		wat.waitFor(5000);
-		if(titlename.contains("微博")){
+		if(titlename.contains("寰崥")){
 			Assert.assertTrue(true);	
 		}
 		switchWin.toSpecificWindow(InterFRegister.agencywindowsname);

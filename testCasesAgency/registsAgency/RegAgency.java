@@ -42,7 +42,7 @@ public class RegAgency {
     	du.what(InterFRegister.getinreg).click();
     	String titlename = du.what(InterFRegister.regtitle).getText();
     	System.out.println(titlename);
-    	Assert.assertEquals(titlename.trim(), "´´½¨·ÖÏúÉÌÕËºÅ");
+    	Assert.assertEquals(titlename.trim(), "åˆ›å»ºåˆ†é”€å•†è´¦å·");
     	
     	
     }
@@ -59,13 +59,13 @@ public class RegAgency {
 
 			System.out.println(useraccountNULLerrorstring.getText());
 			Assert.assertEquals(useraccountNULLerrorstring.getText(),
-					"* ÇëÊäÈëÓÃ»§Ãû");
+					"* è¯·è¾“å…¥ç”¨æˆ·å");
 		} catch (Exception e) {
-			System.out.println("Ã»ÓĞÉú³É¿ÕÓÃ»§ÃûÏÂµÄÌáÊ¾ " + ErrorCode.nosource);// TODO:
+			System.out.println("æ²¡æœ‰ç”Ÿæˆç©ºç”¨æˆ·åä¸‹çš„æç¤º " + ErrorCode.nosource);// TODO:
 																		// handle
 																		// exception
 		}
-		// ÑéÖ¤Ä¬ÈÏ×´Ì¬ÏÂµÄsubmitÌáÊ¾²Ù×÷
+		// éªŒè¯é»˜è®¤çŠ¶æ€ä¸‹çš„submitæç¤ºæ“ä½œ
 		du.what(InterFRegister.reguseraccount).clear();
 		du.what(InterFRegister.reguseraccount).sendKeys("12345");
 		wat.waitFor(3000);
@@ -74,14 +74,14 @@ public class RegAgency {
 			WebElement useraccountNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountNUMerrorstring.getText());
 			Assert.assertEquals(useraccountNUMerrorstring.getText(),
-					"* ÇëÊäÈëÓĞĞ§µÄÓÃ»§Ãû,×îÉÙ6 ¸ö×Ö·û");
+					"* è¯·è¾“å…¥æœ‰æ•ˆçš„ç”¨æˆ·å,æœ€å°‘6 ä¸ªå­—ç¬¦");
 
 		} catch (Exception e) {
-			System.out.println("Ã»ÓĞÉú³É´íÎóÓÃ»§Ãû³¤¶È(ÉÙÓÚ6Î»)ÏÂµÄÌáÊ¾ " + ErrorCode.nosource);// TODO:
+			System.out.println("æ²¡æœ‰ç”Ÿæˆé”™è¯¯ç”¨æˆ·åé•¿åº¦(å°‘äº6ä½)ä¸‹çš„æç¤º " + ErrorCode.nosource);// TODO:
 																				// handle
 																				// exception
 		}
-		// ÑéÖ¤ÊäÈëÉÙÓÚ6Î¢µÄ×Ö·ûsubmit
+		// éªŒè¯è¾“å…¥å°‘äº6å¾®çš„å­—ç¬¦submit
 		du.what(InterFRegister.reguseraccount).clear();
 		du.what(InterFRegister.reguseraccount).sendKeys("!@#$%^^&&*()");
 		wat.waitFor(3000);
@@ -90,14 +90,14 @@ public class RegAgency {
 			WebElement useraccountFORMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountFORMerrorstring.getText());
 			Assert.assertEquals(useraccountFORMerrorstring.getText(),
-					"* ÇëÊäÈëÓĞĞ§µÄÓÃ»§Ãû£¬Ö»ÄÜ°üº¬ÖĞÎÄºº×Ö¡¢Ó¢ÎÄ×ÖÄ¸»òÊı×Ö");
+					"* è¯·è¾“å…¥æœ‰æ•ˆçš„ç”¨æˆ·åï¼Œåªèƒ½åŒ…å«ä¸­æ–‡æ±‰å­—ã€è‹±æ–‡å­—æ¯æˆ–æ•°å­—");
 
 		} catch (Exception e) {
-			System.out.println("Ã»ÓĞÉú³É´íÎóÓÃ»§Ãû·ûºÅÏÂµÄÌáÊ¾ " + ErrorCode.nosource);// TODO:
+			System.out.println("æ²¡æœ‰ç”Ÿæˆé”™è¯¯ç”¨æˆ·åç¬¦å·ä¸‹çš„æç¤º " + ErrorCode.nosource);// TODO:
 																		// handle
 																		// exception
 		}
-		// ´íÎóµÄ·ûºÅ×´Ì¬
+		// é”™è¯¯çš„ç¬¦å·çŠ¶æ€
 		du.what(InterFRegister.reguseraccount).clear();
 		du.what(InterFRegister.reguseraccount).sendKeys("gllysleletian");
 		wat.waitFor(3000);
@@ -105,20 +105,20 @@ public class RegAgency {
 		try {
 			WebElement useraccountEXTerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(useraccountEXTerrorstring.getText());
-			Assert.assertEquals(useraccountEXTerrorstring.getText(), "ÓÃ»§ÃûÒÑ´æÔÚ");
+			Assert.assertEquals(useraccountEXTerrorstring.getText(), "ç”¨æˆ·åå·²å­˜åœ¨");
 
 		} catch (Exception e) {
-			System.out.println("Ã»ÓĞÉú³ÉÓÃ»§Ãû´æÔÚÏÂµÄÌáÊ¾ " + ErrorCode.nosource);// TODO:
+			System.out.println("æ²¡æœ‰ç”Ÿæˆç”¨æˆ·åå­˜åœ¨ä¸‹çš„æç¤º " + ErrorCode.nosource);// TODO:
 																		// handle
 																		// exception
 		}
-		// ÑéÖ¤´æÔÚ
+		// éªŒè¯å­˜åœ¨
 	}
 
 	@Test(priority = 3)
 	public void chkRegMobile() {
 		du.what(InterFRegister.reguseraccount).clear();
-		// Ö»ÓÃ2´ÎËùÒÔ²»×ö·½·¨
+		// åªç”¨2æ¬¡æ‰€ä»¥ä¸åšæ–¹æ³•
 		int lengthnum = 10;
 		Random random = new Random();
 		String base = "0123456789";
@@ -146,9 +146,9 @@ public class RegAgency {
 		try {
 			WebElement usermobileNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileNULLerrorstring.getText());
-			Assert.assertEquals(usermobileNULLerrorstring.getText(), "* ÇëÊäÈëÊÖ»úºÅ");
+			Assert.assertEquals(usermobileNULLerrorstring.getText(), "* è¯·è¾“å…¥æ‰‹æœºå·");
 		} catch (Exception e) {
-			System.out.println(e + "¿ÕÖµÏÂµÄÊÖ»úºÅ´íÎóÌáÊ¾Ã»ÓĞÉú³É");// TODO: handle exception
+			System.out.println(e + "ç©ºå€¼ä¸‹çš„æ‰‹æœºå·é”™è¯¯æç¤ºæ²¡æœ‰ç”Ÿæˆ");// TODO: handle exception
 		}
         du.what(InterFRegister.regmobile).clear();
         du.what(InterFRegister.regmobile).sendKeys(randomaccountNUM);
@@ -157,9 +157,9 @@ public class RegAgency {
         try {
         	WebElement usermobileTENNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileTENNUMerrorstring.getText());
-			Assert.assertEquals(usermobileTENNUMerrorstring.getText(), "* ÇëÊäÈëÓĞĞ§µÄÊÖ»úºÅÂë");
+			Assert.assertEquals(usermobileTENNUMerrorstring.getText(), "* è¯·è¾“å…¥æœ‰æ•ˆçš„æ‰‹æœºå·ç ");
 		} catch (Exception e) {
-		System.out.println(e +" Êı×Ö10Î»µÄ´íÎóÊÖ»úºÅÃ»ÓĞÌáÊ¾");	// TODO: handle exception
+		System.out.println(e +" æ•°å­—10ä½çš„é”™è¯¯æ‰‹æœºå·æ²¡æœ‰æç¤º");	// TODO: handle exception
 		}
         du.what(InterFRegister.regmobile).clear();
         du.what(InterFRegister.regmobile).sendKeys(randomaccount);
@@ -168,9 +168,9 @@ public class RegAgency {
         try {
         	WebElement usermobileSTRerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileSTRerrorstring.getText());
-			Assert.assertEquals(usermobileSTRerrorstring.getText(), "* ÇëÊäÈëÓĞĞ§µÄÊÖ»úºÅÂë");
+			Assert.assertEquals(usermobileSTRerrorstring.getText(), "* è¯·è¾“å…¥æœ‰æ•ˆçš„æ‰‹æœºå·ç ");
 		} catch (Exception e) {
-		System.out.println(e +" ×Ö·û´®");	// TODO: handle exception
+		System.out.println(e +" å­—ç¬¦ä¸²");	// TODO: handle exception
 		}
 	}
 	
@@ -196,9 +196,9 @@ public class RegAgency {
 		try {
 			WebElement userpasswordNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordNULLerrorstring.getText());
-			Assert.assertEquals(userpasswordNULLerrorstring.getText(), "* ÇëÊäÈëÃÜÂë");
+			Assert.assertEquals(userpasswordNULLerrorstring.getText(), "* è¯·è¾“å…¥å¯†ç ");
 		} catch (Exception e) {
-			System.out.println(e +" ¿ÕÃÜÂëÎŞÌáÊ¾");// TODO: handle exception
+			System.out.println(e +" ç©ºå¯†ç æ— æç¤º");// TODO: handle exception
 		}
 		du.what("//input [@id='password']").sendKeys("abcde");
 		wat.waitFor(3000);
@@ -206,9 +206,9 @@ public class RegAgency {
 		try {
 			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordLOWNUMerrorstring.getText());
-			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* ÇëÊäÈëÓĞĞ§µÄÃÜÂë,×îÉÙ6 ¸ö×Ö·û");
+			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* è¯·è¾“å…¥æœ‰æ•ˆçš„å¯†ç ,æœ€å°‘6 ä¸ªå­—ç¬¦");
 		} catch (Exception e) {
-			System.out.println(e +" Ğ¡ÓÚ5Î»ÎŞÌáÊ¾");// TODO: handle exception
+			System.out.println(e +" å°äº5ä½æ— æç¤º");// TODO: handle exception
 		}  
 		du.what("//input [@id='password']").sendKeys("!@#$%^&*(");
 		wat.waitFor(3000);
@@ -216,9 +216,9 @@ public class RegAgency {
 		try {
 			WebElement userpasswordLOWNUMerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordLOWNUMerrorstring.getText());
-			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* ÇëÊäÈëÊı×Ö»òÓ¢ÎÄ×ÖÄ¸");
+			Assert.assertEquals(userpasswordLOWNUMerrorstring.getText(), "* è¯·è¾“å…¥æ•°å­—æˆ–è‹±æ–‡å­—æ¯");
 		} catch (Exception e) {
-			System.out.println(e +" ·ÇÓ¢ÎÄÓëÊı×ÖÊäÈëÎŞÌáÊ¾");// TODO: handle exception
+			System.out.println(e +" éè‹±æ–‡ä¸æ•°å­—è¾“å…¥æ— æç¤º");// TODO: handle exception
 		} 
 		du.what("//input [@id='password']").clear();
 		du.what("//input [@id='password']").sendKeys(InterFRegister.userpasswordnumber);
@@ -228,9 +228,9 @@ public class RegAgency {
 		try {
 			WebElement userpasswordRECHKerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userpasswordRECHKerrorstring.getText());
-			Assert.assertEquals(userpasswordRECHKerrorstring.getText(), "* Á½´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ");
+			Assert.assertEquals(userpasswordRECHKerrorstring.getText(), "* ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸ä¸€è‡´");
 		} catch (Exception e) {
-			System.out.println(e +" ÖØ¸´È·ÈÏÃÜÂë´íÎóÎŞÌáÊ¾");// TODO: handle exception
+			System.out.println(e +" é‡å¤ç¡®è®¤å¯†ç é”™è¯¯æ— æç¤º");// TODO: handle exception
 		} 
 	}
 	
@@ -245,9 +245,9 @@ public class RegAgency {
 		try {
 			WebElement userverifyCHKNULLerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userverifyCHKNULLerrorstring.getText());
-			Assert.assertEquals(userverifyCHKNULLerrorstring.getText(), "* ÇëÊäÈëÑéÖ¤Âë");
+			Assert.assertEquals(userverifyCHKNULLerrorstring.getText(), "* è¯·è¾“å…¥éªŒè¯ç ");
 		} catch (Exception e) {
-			System.out.println(e +" ÑéÖ¤ÂëĞ£Ñé´íÎóÌáÊ¾Ê§Ğ§");// TODO: handle exception
+			System.out.println(e +" éªŒè¯ç æ ¡éªŒé”™è¯¯æç¤ºå¤±æ•ˆ");// TODO: handle exception
 		} 
 		du.what(InterFRegister.regverifycode).clear();
 		du.what(InterFRegister.regverifycode).sendKeys("0823letia");
@@ -256,9 +256,9 @@ public class RegAgency {
 		try {
 			WebElement userverifyCHKerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(userverifyCHKerrorstring.getText());
-			Assert.assertEquals(userverifyCHKerrorstring.getText(), "ÑéÖ¤ÂëÊäÈë²»ÕıÈ·");
+			Assert.assertEquals(userverifyCHKerrorstring.getText(), "éªŒè¯ç è¾“å…¥ä¸æ­£ç¡®");
 		} catch (Exception e) {
-			System.out.println(e +" ÑéÖ¤ÂëĞ£Ñé´íÎóÌáÊ¾Ê§Ğ§");// TODO: handle exception
+			System.out.println(e +" éªŒè¯ç æ ¡éªŒé”™è¯¯æç¤ºå¤±æ•ˆ");// TODO: handle exception
 		} 
 	} 
 	@Test(priority = 6)
@@ -271,9 +271,9 @@ public class RegAgency {
 		try {
 			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileverifyCHKNUllerrorstring.getText());
-			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "* ÇëÊäÈë¶ÌĞÅÑéÖ¤Âë");
+			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "* è¯·è¾“å…¥çŸ­ä¿¡éªŒè¯ç ");
 		} catch (Exception e) {
-			System.out.println(e +" ¶ÌĞÅÑéÖ¤ÂëĞ£Ñé´íÎóÌáÊ¾Ê§Ğ§");// TODO: handle exception
+			System.out.println(e +" çŸ­ä¿¡éªŒè¯ç æ ¡éªŒé”™è¯¯æç¤ºå¤±æ•ˆ");// TODO: handle exception
 		} 	
 		du.what(InterFRegister.regmobilecode).clear();
 		du.what(InterFRegister.regmobilecode).sendKeys("08230823");
@@ -282,9 +282,9 @@ public class RegAgency {
 		try {
 			WebElement usermobileverifyCHKNUllerrorstring = du.what(InterFRegister.regformError);
 			System.out.println(usermobileverifyCHKNUllerrorstring.getText());
-			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "ÑéÖ¤ÂëÊäÈë´íÎó");
+			Assert.assertEquals(usermobileverifyCHKNUllerrorstring.getText(), "éªŒè¯ç è¾“å…¥é”™è¯¯");
 		} catch (Exception e) {
-			System.out.println(e +" ¶ÌĞÅÑéÖ¤ÂëĞ£Ñé´íÎóÌáÊ¾Ê§Ğ§");// TODO: handle exception
+			System.out.println(e +" çŸ­ä¿¡éªŒè¯ç æ ¡éªŒé”™è¯¯æç¤ºå¤±æ•ˆ");// TODO: handle exception
 		} 	
 	}
 	@AfterClass

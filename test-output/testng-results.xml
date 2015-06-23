@@ -2,20 +2,55 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19259" started-at="2015-06-01T03:32:17Z" finished-at="2015-06-01T03:32:37Z">
+  <suite name="Default suite" duration-ms="28375" started-at="2015-06-23T03:01:04Z" finished-at="2015-06-23T03:01:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19259" started-at="2015-06-01T03:32:17Z" finished-at="2015-06-01T03:32:37Z">
-      <class name="AllPullMenu.PullGroup">
-        <test-method status="PASS" signature="init()[pri:0, instance:AllPullMenu.PullGroup@64d2d351]" name="init" is-config="true" duration-ms="19238" started-at="2015-06-01T11:32:17Z" finished-at="2015-06-01T11:32:36Z">
+    <test name="Default test" duration-ms="28375" started-at="2015-06-23T03:01:04Z" finished-at="2015-06-23T03:01:32Z">
+      <class name="AllPullMenu.Pulltive">
+        <test-method status="PASS" signature="init()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="init" is-config="true" duration-ms="28306" started-at="2015-06-23T11:01:04Z" finished-at="2015-06-23T11:01:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="Group()[pri:0, instance:AllPullMenu.PullGroup@64d2d351]" name="Group" duration-ms="6" started-at="2015-06-01T11:32:37Z" finished-at="2015-06-01T11:32:37Z">
+        <test-method status="PASS" signature="chkOrderTicket()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="chkOrderTicket" duration-ms="11" started-at="2015-06-23T11:01:32Z" finished-at="2015-06-23T11:01:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Group -->
-      </class> <!-- AllPullMenu.PullGroup -->
+        </test-method> <!-- chkOrderTicket -->
+        <test-method status="FAIL" signature="closeWinHandle()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="closeWinHandle" is-config="true" duration-ms="0" started-at="2015-06-23T11:01:32Z" finished-at="2015-06-23T11:01:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at AllPullMenu.Pulltive.closeWinHandle(Pulltive.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWinHandle -->
+      </class> <!-- AllPullMenu.Pulltive -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
