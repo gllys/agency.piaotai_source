@@ -15,7 +15,7 @@ public interface InterFLogin {
 	String message 	= "//a[@id='drop_6']";
 	//left child menu 
 //ticket
-	String sale 		= "//li[1]/ul/li[1]"; 
+	String sale 		= "//li[1]/ul/li[1]/a"; 
 	String saleName     = "//table//thead//tr//th[8]";
 	String group		= "//li[1]/ul/li[2]"; 
 	String groupName	= "//table/thead/tr/th[8]";	
@@ -32,7 +32,7 @@ public interface InterFLogin {
 	String applycheckName	="//*[@id='mainpanel']/div/div[1]/div/ul/li[1]/h4";
 //addup
 	String addup		= "//li[3]/ul/li[1]";
-	String addupbuyName	= "//*[@id='mainpanel']/div/ul/li[1]/a/strong";
+	String addupbuyName	= "//*[@id='mainpanel']/div/div[1]/div[1]/ul/li[1]/h4";
 //balance
 	String shouldpayment		= "//li[4]/ul/li[1]";
 	String shouldpaymentName 	= "//*[@id='mainpanel']/div/div[1]/div[1]/ul/li[1]/h4";

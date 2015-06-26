@@ -2,55 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28375" started-at="2015-06-23T03:01:04Z" finished-at="2015-06-23T03:01:32Z">
+  <suite name="Default suite" duration-ms="19554" started-at="2015-06-26T01:58:56Z" finished-at="2015-06-26T01:59:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28375" started-at="2015-06-23T03:01:04Z" finished-at="2015-06-23T03:01:32Z">
-      <class name="AllPullMenu.Pulltive">
-        <test-method status="PASS" signature="init()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="init" is-config="true" duration-ms="28306" started-at="2015-06-23T11:01:04Z" finished-at="2015-06-23T11:01:32Z">
+    <test name="Default test" duration-ms="19554" started-at="2015-06-26T01:58:56Z" finished-at="2015-06-26T01:59:16Z">
+      <class name="registsAgency.InRegAgency">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="inialize" is-config="true" duration-ms="7068" started-at="2015-06-26T09:58:56Z" finished-at="2015-06-26T09:59:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="chkOrderTicket()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="chkOrderTicket" duration-ms="11" started-at="2015-06-23T11:01:32Z" finished-at="2015-06-23T11:01:32Z">
+        </test-method> <!-- inialize -->
+        <test-method status="PASS" signature="regAgency()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="regAgency" duration-ms="10957" started-at="2015-06-26T09:59:03Z" finished-at="2015-06-26T09:59:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chkOrderTicket -->
-        <test-method status="FAIL" signature="closeWinHandle()[pri:0, instance:AllPullMenu.Pulltive@1b0375b3]" name="closeWinHandle" is-config="true" duration-ms="0" started-at="2015-06-23T11:01:32Z" finished-at="2015-06-23T11:01:32Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at AllPullMenu.Pulltive.closeWinHandle(Pulltive.java:154)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- regAgency -->
+        <test-method status="PASS" signature="quIt()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="quIt" is-config="true" duration-ms="1520" started-at="2015-06-26T09:59:14Z" finished-at="2015-06-26T09:59:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeWinHandle -->
-      </class> <!-- AllPullMenu.Pulltive -->
+        </test-method> <!-- quIt -->
+      </class> <!-- registsAgency.InRegAgency -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -33,6 +33,10 @@ public class SimplyRegisterOnAgency {
 	 * @author Gllys
 	 * @serialData 2015-04-07
 	 */
+	public SimplyRegisterOnAgency setRePassword(String repassword){
+		du.what(InterFRegister.regrepassword).sendKeys(repassword);
+		return this;
+	}
 
 	public SimplyRegisterOnAgency setMoblie(String mobilenumber){
 		du.what(InterFRegister.regmobile).sendKeys(mobilenumber);

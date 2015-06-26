@@ -8,7 +8,12 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
-
+/**
+ * 
+ * @author Gllys
+ * @see    读取配置文件
+ *
+ */
 
 public class ParseProperties {
 

@@ -52,8 +52,8 @@ public class InRegAgency {
 		/**
 		 * Description :JS to specific window.
 		 * 
-		 * @author ：Gllys
-		 * @see :
+		 * @author :Gllys
+		 * @see : 通过删除JS
 		 * @param :
 		 * @return : void
 		 * @create ：2015-04-20
@@ -79,12 +79,14 @@ public class InRegAgency {
 			wat.waitFor(2000);
 			simplyregisteronagency.setAccount(randomaccount);
 			simplyregisteronagency.setPassword(InterFRegister.userpasswordnumber);
+			simplyregisteronagency.setRePassword(InterFRegister.regpassword);
 			simplyregisteronagency.setMoblie(InterFRegister.mobilenumber);
 			simplyregisteronagency.setVerify(InterFRegister.regverify);
 			simplyregisteronagency.setMobileVerify(InterFRegister.regmobileverify);
 
 			try {
 				simplyregisteronagency.regsubmit();
+				wat.waitFor(5000);
 			} catch (Exception e) {
 				System.out.println(e);// TODO: handle exception
 			}
@@ -100,7 +102,7 @@ public class InRegAgency {
 	@AfterClass 
 	public void quIt(){
 		driver.close();
-		driver.quit();
+
 		
 	}
 	

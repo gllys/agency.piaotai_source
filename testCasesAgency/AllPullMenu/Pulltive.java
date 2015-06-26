@@ -2,18 +2,16 @@ package AllPullMenu;
 
 /**
  * 登录页面左侧Pull菜单显示以及按钮功能chk
+ * 
  */
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.interactions.Action;
+//import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-//import com.thoughtworks.selenium.Selenium;
-
-import asuites.agencyLogin;
 import pagesbuilt.InterFLogin;
 import pagesbuilt.InterFRegister;
 import waitsource.wait;
@@ -31,18 +29,34 @@ public class Pulltive {
 
 	@BeforeClass
 	public void init() {
-		agencyLogin.inialize();
+		BrowsersSet browser = new BrowsersSet(BrowsersType.chrome);
+		driver = browser.web_driver;
+		du = new NewDo(driver);
+		wat = new wait(driver);
+		// action = new Actions(driver);
+		driver.manage().window().maximize();
+		driver.get(InterFRegister.local);
 
+		wat.waitForElementPresent(InterFRegister.dashpicture);
+		try {
+			du.what(InterFRegister.useraccount).sendKeys(
+					InterFRegister.useraccountnumber);
+			du.what(InterFRegister.userpassword).sendKeys(
+					InterFRegister.userpasswordnumber);
+			du.what(InterFRegister.userloginbtn).click();
+		} catch (Exception e) {
+			System.out.println(e + ErrorCode.nosource);
+		}
 	}
 
-	@Test
-	public void chkTicketBash() {//门票
-		Assert.assertEquals(du.what(InterFLogin.ticket).isEnabled(), true);
+	@Test(priority = 1)
+	public void chkTicketBash() {// 门票
+		Assert.assertEquals(du.what(InterFLogin.ticket).isDisplayed(), true);
 		// du.what(InterFLogin.ticket).click();
 		// du.waitFor(2000);
 		du.waitFor(2000);
 		try {
-			System.out.println(du.what(InterFLogin.sale + "/a").getText());
+			System.out.println(du.what(InterFLogin.sale).getText());
 			Assert.assertEquals(du.what(InterFLogin.sale).isDisplayed(), true);
 			System.out.println(du.what(InterFLogin.group + "/a").getText());
 			Assert.assertEquals(du.what(InterFLogin.group).isDisplayed(), true);
@@ -56,7 +70,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void chkTicketSale()// 门票&&门票下的子页按钮&&文字确认
 	{
 		try {
@@ -71,7 +85,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void chkTicketGroup() {
 		try {
 			du.what(InterFLogin.group).click();
@@ -85,7 +99,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void chkTicketCart() {
 		try {
 			du.what(InterFLogin.cart).click();
@@ -99,7 +113,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 5)
 	public void chkTicketFavourite() {
 		try {
 			du.what(InterFLogin.favourite).click();
@@ -113,22 +127,29 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 6)
 	public void chkOrderBash()// 订单&&下级子页&&文字确认
 	{
-		try {	Assert.assertEquals(du.what(InterFLogin.order).isEnabled(), true);
-		du.waitFor(2000);
 		try {
-			System.out.println(du.what(InterFLogin.ordermanage + "/a").getText());
-			Assert.assertEquals(du.what(InterFLogin.ordermanageName).isDisplayed(), true);
-			System.out.println(du.what(InterFLogin.refundorder + "/a").getText());
-			Assert.assertEquals(du.what(InterFLogin.refundorderName).isDisplayed(), true);
-			System.out.println(du.what(InterFLogin.applycheck + "/a").getText());
-			Assert.assertEquals(du.what(InterFLogin.applycheckName).isDisplayed(), true);
+			Assert.assertEquals(du.what(InterFLogin.order).isEnabled(), true);
+			du.waitFor(2000);
+			try {
+				System.out.println(du.what(InterFLogin.ordermanage + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.ordermanageName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.refundorder + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.refundorderName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.applycheck + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.applycheckName)
+						.isDisplayed(), true);
 
-		} catch (Exception e) {
-			System.out.println(e);
-		}
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 			for (int sum = 0; sum < 3; sum++) {
 				du.what(InterFLogin.order).click();
 				wat.waitFor(2000);
@@ -144,7 +165,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 7)
 	public void chkOrderTicket() {
 		try {
 			if (!du.what(InterFLogin.ordermanage).isEnabled()) {
@@ -157,14 +178,13 @@ public class Pulltive {
 			}
 			Assert.assertEquals(du.what(InterFLogin.ordermanage).isDisplayed(),
 					true);
-			Assert.assertEquals(du.what(InterFLogin.ordermanage + "/@class"),
-					"class=active");
+			
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}
 	}
 
-	@Test
+	@Test(priority = 8)
 	public void chkOrderRefund() {
 		try {
 			Assert.assertEquals(du.what(InterFLogin.refundorder).isDisplayed(),
@@ -180,7 +200,7 @@ public class Pulltive {
 		}
 	}
 
-	@Test
+	@Test(priority = 9)
 	public void chkOrderApplyCheck() {
 		try {
 			Assert.assertEquals(du.what(InterFLogin.applycheck).isDisplayed(),
@@ -194,8 +214,9 @@ public class Pulltive {
 			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}
 	}
-	@Test
-	public void chkAddUp(){//统计页面
+
+	@Test(priority = 10)
+	public void chkAddUp() {// 统计页面
 		try {
 			try {
 				System.out.println(du.what(InterFLogin.addup + "/a").getText());
@@ -204,31 +225,41 @@ public class Pulltive {
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-			Assert.assertEquals(du.what(InterFLogin.addup).isDisplayed(),
-					true);
+			Assert.assertEquals(du.what(InterFLogin.addup).isDisplayed(), true);
 			for (int sum = 0; sum < 3; sum++) {
 				du.what(InterFLogin.addup).click();
 			}
-			Assert.assertEquals(
-					du.what(InterFLogin.addupbuyName).isEnabled(), true);
+			Assert.assertEquals(du.what(InterFLogin.addupbuyName).isEnabled(),
+					true);
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}
 	}
-	@Test
-	public void chkBalance(){//结算
+
+	@Test(priority = 11)
+	public void chkBalance() {// 结算
 		try {
 			try {
-				System.out.println(du.what(InterFLogin.shouldpayment + "/a").getText());
-				Assert.assertEquals(du.what(InterFLogin.shouldpaymentName).isDisplayed(), true);
-				System.out.println(du.what(InterFLogin.platform + "/a").getText());
-				Assert.assertEquals(du.what(InterFLogin.platformName).isDisplayed(), true);
-				System.out.println(du.what(InterFLogin.property + "/a").getText());
-				Assert.assertEquals(du.what(InterFLogin.propertyName).isDisplayed(), true);
-				System.out.println(du.what(InterFLogin.blotter + "/a").getText());
-				Assert.assertEquals(du.what(InterFLogin.blotterName).isDisplayed(), true);
-				System.out.println(du.what(InterFLogin.bankcard + "/a").getText());
-				Assert.assertEquals(du.what(InterFLogin.bankcardName).isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.shouldpayment + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.shouldpaymentName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.platform + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.platformName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.property + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.propertyName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.blotter + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.blotterName)
+						.isDisplayed(), true);
+				System.out.println(du.what(InterFLogin.bankcard + "/a")
+						.getText());
+				Assert.assertEquals(du.what(InterFLogin.bankcardName)
+						.isDisplayed(), true);
 
 			} catch (Exception e) {
 				System.out.println(e);
@@ -238,8 +269,8 @@ public class Pulltive {
 			for (int sum = 0; sum < 3; sum++) {
 				du.what(InterFLogin.balance).click();
 			}
-			Assert.assertEquals(
-					du.what(InterFLogin.shouldpayment).isEnabled(), true);
+			Assert.assertEquals(du.what(InterFLogin.shouldpayment).isEnabled(),
+					true);
 		} catch (Exception e) {
 			System.out.println(e + ErrorCode.nosource);// TODO: handle exception
 		}

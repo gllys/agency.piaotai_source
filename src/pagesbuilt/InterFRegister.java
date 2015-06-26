@@ -12,15 +12,17 @@ public interface InterFRegister {
 	String remote 				= "http://www.piaotai.com";
 	// REGAGENCY
 	String regtitle 			= "//div/h4";
-	String reguseraccount 		= "//input [@id='account']";
-	String reguserpassword 		= "//input [@id='password']|//input[@id='repassword']";
-	String regsubmit 			= "//div//button[@id='btn-reg']";
-	String regmobile 			= "//input[@id='mobile']";
-	String regverifycode 		= "//input[@id='verifycode']";
-	String regmobilecode 		= "//input[@id='code']";
-	String regturnback			= "//div/a[@class='btn btn-default btn-block']";
+	String reguseraccount 		= "//*[@id='account']";
+	String reguserpassword 		= "//*[@id='password']";
+	String regrepassword		= "//*[@id='repassword']";
+	String regsubmit 			= "//*[@id='btn-reg']";
+	String regmobile 			= "//*[@id='mobile']";
+	String regverifycode 		= "//*[@id='verifycode']";
+	String regmobilecode 		= "//*[@id='code']";
+	String regturnback			= "//form[@id='RegisterForm']/div/div[2]/div/a";
 	String regverify 			= "0823";
 	String regmobileverify 		= "0823";
+	String regpassword			= "0823letian";
 	// AHEADAGENCY
 	String getinreg 			= "//a [@class='new-account']";
 	String dashpicture 			= "//div [@class='item active']";
