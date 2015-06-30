@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="registsAgency.InRegAgency">
+      <class name="registsAgency.RegAgency">
         <methods>
-          <include name="regAgency"/>
-          <include name="quIt"/>
+          <include name="chkRegMobile"/>
+          <include name="chkRegpwd"/>
+          <include name="chkRegverify"/>
           <include name="inialize"/>
+          <include name="quIt"/>
+          <include name="chkRegMobileverify"/>
+          <include name="chkRegUserName"/>
         </methods>
-      </class> <!-- registsAgency.InRegAgency -->
+      </class> <!-- registsAgency.RegAgency -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

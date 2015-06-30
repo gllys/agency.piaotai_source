@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19554" started-at="2015-06-26T01:58:56Z" finished-at="2015-06-26T01:59:16Z">
+  <suite name="Default suite" duration-ms="49759" started-at="2015-06-30T03:21:13Z" finished-at="2015-06-30T03:22:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19554" started-at="2015-06-26T01:58:56Z" finished-at="2015-06-26T01:59:16Z">
-      <class name="registsAgency.InRegAgency">
-        <test-method status="PASS" signature="inialize()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="inialize" is-config="true" duration-ms="7068" started-at="2015-06-26T09:58:56Z" finished-at="2015-06-26T09:59:03Z">
+    <test name="Default test" duration-ms="49759" started-at="2015-06-30T03:21:13Z" finished-at="2015-06-30T03:22:03Z">
+      <class name="registsAgency.RegAgency">
+        <test-method status="PASS" signature="inialize()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="inialize" is-config="true" duration-ms="6959" started-at="2015-06-30T11:21:13Z" finished-at="2015-06-30T11:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialize -->
-        <test-method status="PASS" signature="regAgency()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="regAgency" duration-ms="10957" started-at="2015-06-26T09:59:03Z" finished-at="2015-06-26T09:59:14Z">
+        <test-method status="PASS" signature="chkRegTile()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegTile" duration-ms="1142" started-at="2015-06-30T11:21:20Z" finished-at="2015-06-30T11:21:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- regAgency -->
-        <test-method status="PASS" signature="quIt()[pri:0, instance:registsAgency.InRegAgency@3cb5cdba]" name="quIt" is-config="true" duration-ms="1520" started-at="2015-06-26T09:59:14Z" finished-at="2015-06-26T09:59:16Z">
+        </test-method> <!-- chkRegTile -->
+        <test-method status="PASS" signature="chkRegUserName()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegUserName" duration-ms="17126" started-at="2015-06-30T11:21:22Z" finished-at="2015-06-30T11:21:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkRegUserName -->
+        <test-method status="PASS" signature="chkRegMobile()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegMobile" duration-ms="5566" started-at="2015-06-30T11:21:39Z" finished-at="2015-06-30T11:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkRegMobile -->
+        <test-method status="PASS" signature="chkRegpwd()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegpwd" duration-ms="8503" started-at="2015-06-30T11:21:44Z" finished-at="2015-06-30T11:21:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkRegpwd -->
+        <test-method status="PASS" signature="chkRegverify()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegverify" duration-ms="4522" started-at="2015-06-30T11:21:53Z" finished-at="2015-06-30T11:21:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkRegverify -->
+        <test-method status="PASS" signature="chkRegMobileverify()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="chkRegMobileverify" duration-ms="4350" started-at="2015-06-30T11:21:57Z" finished-at="2015-06-30T11:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chkRegMobileverify -->
+        <test-method status="PASS" signature="quIt()[pri:0, instance:registsAgency.RegAgency@2752f6e2]" name="quIt" is-config="true" duration-ms="1571" started-at="2015-06-30T11:22:02Z" finished-at="2015-06-30T11:22:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quIt -->
-      </class> <!-- registsAgency.InRegAgency -->
+      </class> <!-- registsAgency.RegAgency -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

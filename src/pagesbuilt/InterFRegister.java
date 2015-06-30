@@ -11,7 +11,8 @@ public interface InterFRegister {
 	String local      			= "http://agency.test.demo.org.cn/";
 	String remote 				= "http://www.piaotai.com";
 	// REGAGENCY
-	String regtitle 			= "//div/h4";
+	String regtitle 			= "//h3";
+	String regclick				= "html/body/div[2]/div/h1/a";
 	String reguseraccount 		= "//*[@id='account']";
 	String reguserpassword 		= "//*[@id='password']";
 	String regrepassword		= "//*[@id='repassword']";
